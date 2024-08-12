@@ -1,0 +1,599 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Favicons -->
+    <link href="assets/images/favicon.png" rel="icon">
+    <!-- font aweasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- form select -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- bootstrap 5.2.2 -->
+    <link href="dist/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- flatpicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- fonts -->
+    <link href="dist/fonts/fonts.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="assets/css/ahsan.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header__nav flex-i justify-between">
+                    <div class="aside-btn">
+                        <i class=" fa-solid fa-bars-staggered"></i>
+                    </div>
+                    <a href="/" class="logo web-logo">
+                        <img src="assets/images/logo2.png" alt="" class="logo__img">
+                    </a>
+                    <div class="flex-i">
+                        <a href="/" class="mobile-logo">
+                            <img src="assets/images/mobile-logo.png" alt="" class="mobile-logo__img">
+                        </a>
+                        <div class="navlist-wrpr">
+                            <div class="navlist__btn">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                            <ul class="navlist flex-i">
+                                <li class="navlist__item">
+                                    <a href="/" class="navlist__link">الرئيسية</a>
+                                </li>
+                                <li class="navlist__item">
+                                    <a href="about.html" class="navlist__link">من نحن</a>
+                                </li>
+                                <li class="navlist__item">
+                                    <a href="our-strategy.html" class="navlist__link">الإجراءات الإدارية</a>
+                                </li>
+                                <li class="navlist__item">
+                                    <a href="common-questions.html" class="navlist__link">الأسئلة الشائعة</a>
+                                </li>
+                                <li class="navlist__item">
+                                    <a href="posts-page.html" class="navlist__link">مرئيات</a>
+                                </li>
+                                <li class="navlist__item">
+                                    <a href="orders.html" class="navlist__link active">الطلبات</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="header__btn-box flex-i">
+                    <a href="login.html" class="header__login-btn">
+                        <i class="fas fa-sign-in-alt"></i>
+                        تسجيل الدخول
+                    </a>
+                    <a href="register.html" class="header__login-btn">
+                        <i class="fas fa-user-plus"></i>
+                        تسجيل حساب جديد
+                    </a>
+                </div> -->
+                    <div class="flex-i prf-noti-wrpr">
+                        <div class="navbar_noti_box">
+                            <div class="navbar_noti_box-ab"></div>
+                            <i class=" fa-solid fa-bell bell1"></i>
+                            <i class="fa-solid fa-bell bell2"></i>
+
+                            <div class="navbar_noti_box_details">
+                                <div class="navbar_noti_box_details_for_hover"></div>
+                                <div class="notibox__hdr flex-i justify-between">
+                                    <p class="notibox__s1b1_t">الإشعارات</p>
+                                    <div class="markread_btn flex-a">
+                                        تحديد كمقروءة
+                                    </div>
+                                </div>
+                                <div class="notibox flex justify-between">
+                                    <div class="notibox__s1">
+                                        <img src="assets/images/team1.png" alt="" class="notibox__s1_img">
+                                    </div>
+                                    <dov class="notibox__s2">
+                                        <h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+                                        <div class="notibox__s2_wrpr flex-i gap-2">
+                                            <i class="fa-solid fa-clock-three icn"></i>
+                                            <p class="">منذ ساعة</p>
+                                        </div>
+                                    </dov>
+                                    <div class="notibox__s3">
+                                        <input type="checkbox" class="checkbox" name="option3" value="option3">
+                                    </div>
+                                </div>
+                                <div class="notibox flex justify-between">
+                                    <div class="notibox__s1">
+                                        <i class="fa-solid fa-bell"></i>
+                                    </div>
+                                    <dov class="notibox__s2">
+                                        <h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+                                        <div class="notibox__s2_wrpr flex-i gap-2">
+                                            <i class="fa-solid fa-clock-three icn"></i>
+                                            <p class="">منذ ساعة</p>
+                                        </div>
+                                    </dov>
+                                    <div class="notibox__s3">
+                                        <input type="checkbox" class="checkbox" name="option3" value="option3">
+                                    </div>
+                                </div>
+                                <div class="notibox flex justify-between">
+                                    <div class="notibox__s1">
+                                        <img src="assets/images/team2.png" alt="" class="notibox__s1_img">
+                                    </div>
+                                    <dov class="notibox__s2">
+                                        <h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+                                        <div class="notibox__s2_wrpr flex-i gap-2">
+                                            <i class="fa-solid fa-clock-three icn"></i>
+                                            <p class="">منذ ساعة</p>
+                                        </div>
+                                    </dov>
+                                    <div class="notibox__s3">
+                                        <input type="checkbox" class="checkbox" name="option3" value="option3">
+                                    </div>
+                                </div>
+                                <div class="notibox flex justify-between">
+                                    <div class="notibox__s1">
+                                        <i class="fa-solid fa-bell"></i>
+                                    </div>
+                                    <dov class="notibox__s2">
+                                        <h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+                                        <div class="notibox__s2_wrpr flex-i gap-2">
+                                            <i class="fa-solid fa-clock-three icn"></i>
+                                            <p class="">منذ ساعة</p>
+                                        </div>
+                                    </dov>
+                                    <div class="notibox__s3">
+                                        <input type="checkbox" class="checkbox" name="option3" value="option3">
+                                    </div>
+                                </div>
+                                <div class="notiftr flex-a gap-2">
+                                    <input type="checkbox" class="checkbox" name="option3" value="option3"
+                                        id="select-all">
+                                    <p class="notiftr_p">تحديد الكل</p>
+                                    <button class="notiftr__btn flex-a"><i
+                                            class="fa-solid fa-trash-check trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="prf-drpbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/images/profile.png" alt="" class="prf-drpbtn__img">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="pfdrp" class="hidden pfdrp dropdown-menu">
+                                <ul class="pfdrplist">
+                                    <li class="pfdrplist__item text-center namebox">
+                                        <h3 class="pfdrplist__name">Ahsan Iqbal</h3>
+                                        <div class="flex-i pfdrplist__item-wrpr justify-center">
+                                            <span class="pfdrplist__item-age">42</span>
+                                            <span class="pfdrplist__item-t">سنة</span>
+                                            <span class="pfdrplist__item-t">-</span>
+                                            <span class="pfdrplist__item-t">متزوج </span>
+                                        </div>
+                                        <div class="flex-i pfdrplist__item-wrpr justify-center">
+                                            <span class="pfdrplist__item-t">نسبة الإكتمال </span>
+                                        </div>
+                                    </li>
+                                    <li class="pfdrplist__item">
+                                        <a href="profile.html" class="pfdrplist__link">
+                                            <i class="fa fa-user-edit"></i>
+                                            الملف الشخصي
+                                        </a>
+                                    </li>
+                                    <li class="pfdrplist__item">
+                                        <a href="settings.html" class="pfdrplist__link">
+                                            <i class="fa-solid fa-gear"></i>
+                                            الإعدادات
+                                        </a>
+                                    </li>
+                                    <li class="pfdrplist__item">
+                                        <a href="favorite.html" class="pfdrplist__link">
+                                            <i class="fas fa-heart"></i>
+                                            إهتماماتي
+                                        </a>
+                                    </li>
+                                    <li class="pfdrplist__item">
+                                        <a href="login.html" class="pfdrplist__link">
+                                            <i class="fas fa-power-off"></i>
+                                            تسجيل خروج
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+        <div class="breadcrums">
+            <div class="container-fluid">
+                <div class="breadcrums-box flex-i">
+                    <i class="fa-solid fa-badge-check"></i>
+                    <p class="breadcrums-box-p">إختبار الشخصية </p>
+                </div>
+            </div>
+        </div>
+        <section class="personality-test">
+            <div class="container-fluid">
+                <div class="personality-test__box">
+                    <h2 class="personality-test__box-h2">
+                        تجد صعوبة في تقديم نفسك للآخرين
+                    </h2>
+                    <div class="personality-test__box-wrpr">
+                        <div class="personality-test__boxh">موافق</div>
+
+                        <input id="aa1" type="radio" name="prtest5" class="personality-test__radio" checked disabled>
+                        <label for="aa1" class="personality-test__radio-lbl personality-test__radio-lbl1">
+                            <div></div>
+                        </label>
+
+                        <input id="aa2" type="radio" name="prtest5" class="personality-test__radio" disabled>
+                        <label for="aa2" class="personality-test__radio-lbl personality-test__radio-lbl2">
+                            <div></div>
+                        </label>
+
+                        <input id="aa3" type="radio" name="prtest5" class="personality-test__radio" disabled>
+                        <label for="aa3" class="personality-test__radio-lbl personality-test__radio-lbl3">
+                            <div></div>
+                        </label>
+
+                        <input id="aa4" type="radio" name="prtest5" class="personality-test__radio" disabled>
+                        <label for="aa4" class="personality-test__radio-lbl personality-test__radio-lbl4">
+                            <div></div>
+                        </label>
+
+                        <input id="aa5" type="radio" name="prtest5" class="personality-test__radio" disabled>
+                        <label for="aa5" for="" class="personality-test__radio-lbl personality-test__radio-lbl5">
+                            <div></div>
+                        </label>
+
+                        <input id="aa6" type="radio" name="prtest5" class="personality-test__radio" disabled>
+                        <label for="aa6" class="personality-test__radio-lbl personality-test__radio-lbl6">
+                            <div></div>
+                        </label>
+
+                        <input id="aa7" type="radio" name="prtest5" class="personality-test__radio" disabled>
+                        <label for="aa7" for="" class="personality-test__radio-lbl personality-test__radio-lbl7">
+                            <div></div>
+                        </label>
+
+                        <div class="personality-test__boxh">غير موافق</div>
+                    </div>
+                    <!-- 1end -->
+                    <h2 class="personality-test__box-h2">
+                        دائمًا ما تنغمس في التفكير لدرجة أنك تتجاهل أو تنسى ما حولك
+                    </h2>
+                    <div class="personality-test__box-wrpr">
+                        <div class="personality-test__boxh">موافق</div>
+
+                        <input id="a1" type="radio" name="prtest" class="personality-test__radio" disabled>
+                        <label for="a1" class="personality-test__radio-lbl personality-test__radio-lbl1">
+                            <div></div>
+                        </label>
+
+                        <input id="a2" type="radio" name="prtest" class="personality-test__radio" checked disabled>
+                        <label for="a2" class="personality-test__radio-lbl personality-test__radio-lbl2">
+                            <div></div>
+                        </label>
+
+                        <input id="a3" type="radio" name="prtest" class="personality-test__radio" disabled>
+                        <label for="a3" class="personality-test__radio-lbl personality-test__radio-lbl3">
+                            <div></div>
+                        </label>
+
+                        <input id="a4" type="radio" name="prtest" class="personality-test__radio" disabled>
+                        <label for="a4" class="personality-test__radio-lbl personality-test__radio-lbl4">
+                            <div></div>
+                        </label>
+
+                        <input id="a5" type="radio" name="prtest" class="personality-test__radio" disabled>
+                        <label for="a5" for="" class="personality-test__radio-lbl personality-test__radio-lbl5">
+                            <div></div>
+                        </label>
+
+                        <input id="a6" type="radio" name="prtest" class="personality-test__radio" disabled>
+                        <label for="a6" class="personality-test__radio-lbl personality-test__radio-lbl6">
+                            <div></div>
+                        </label>
+
+                        <input id="a7" type="radio" name="prtest" class="personality-test__radio" disabled>
+                        <label for="a7" for="" class="personality-test__radio-lbl personality-test__radio-lbl7">
+                            <div></div>
+                        </label>
+
+                        <div class="personality-test__boxh">غير موافق</div>
+                    </div>
+                    <!-- 2 end -->
+                    <h2 class="personality-test__box-h2">
+                        تحاول الرد على رسائل البريد الإلكتروني الخاصة بك في أقرب وقت ممكن ولا ترغب في رؤية صندوق الوارد
+                        وهو غير منظم
+                    </h2>
+                    <div class="personality-test__box-wrpr">
+                        <div class="personality-test__boxh">موافق</div>
+
+                        <input id="b1" type="radio" name="prtest1" class="personality-test__radio" disabled>
+                        <label for="b1" class="personality-test__radio-lbl personality-test__radio-lbl1">
+                            <div></div>
+                        </label>
+
+                        <input id="b2" type="radio" name="prtest1" class="personality-test__radio" disabled>
+                        <label for="b2" class="personality-test__radio-lbl personality-test__radio-lbl2">
+                            <div></div>
+                        </label>
+
+                        <input id="b3" type="radio" name="prtest1" class="personality-test__radio" disabled>
+                        <label for="b3" class="personality-test__radio-lbl personality-test__radio-lbl3">
+                            <div></div>
+                        </label>
+
+                        <input id="b4" type="radio" name="prtest1" class="personality-test__radio" disabled checked>
+                        <label for="b4" class="personality-test__radio-lbl personality-test__radio-lbl4">
+                            <div></div>
+                        </label>
+
+                        <input id="b5" type="radio" name="prtest1" class="personality-test__radio" disabled>
+                        <label for="b5" for="" class="personality-test__radio-lbl personality-test__radio-lbl5">
+                            <div></div>
+                        </label>
+
+                        <input id="b6" type="radio" name="prtest1" class="personality-test__radio" disabled>
+                        <label for="b6" class="personality-test__radio-lbl personality-test__radio-lbl6">
+                            <div></div>
+                        </label>
+
+                        <input id="b7" type="radio" name="prtest1" class="personality-test__radio" disabled>
+                        <label for="b7" for="" class="personality-test__radio-lbl personality-test__radio-lbl7">
+                            <div></div>
+                        </label>
+
+                        <div class="personality-test__boxh">غير موافق</div>
+                    </div>
+                    <!-- 3end -->
+                    <h2 class="personality-test__box-h2">
+                        تجد أنه من السهل الاحتفاظ بالاسترخاء والتركيز حتى في وجود بعض الضغوط
+                    </h2>
+                    <div class="personality-test__box-wrpr">
+                        <div class="personality-test__boxh">موافق</div>
+
+                        <input id="c1" type="radio" name="prtest2" class="personality-test__radio" disabled>
+                        <label for="c1" class="personality-test__radio-lbl personality-test__radio-lbl1">
+                            <div></div>
+                        </label>
+
+                        <input id="c2" type="radio" name="prtest2" class="personality-test__radio" disabled checked>
+                        <label for="c2" class="personality-test__radio-lbl personality-test__radio-lbl2">
+                            <div></div>
+                        </label>
+
+                        <input id="c3" type="radio" name="prtest2" class="personality-test__radio" disabled>
+                        <label for="c3" class="personality-test__radio-lbl personality-test__radio-lbl3">
+                            <div></div>
+                        </label>
+
+                        <input id="c4" type="radio" name="prtest2" class="personality-test__radio" disabled>
+                        <label for="c4" class="personality-test__radio-lbl personality-test__radio-lbl4">
+                            <div></div>
+                        </label>
+
+                        <input id="c5" type="radio" name="prtest2" class="personality-test__radio" disabled>
+                        <label for="c5" for="" class="personality-test__radio-lbl personality-test__radio-lbl5">
+                            <div></div>
+                        </label>
+
+                        <input id="c6" type="radio" name="prtest2" class="personality-test__radio" disabled>
+                        <label for="c6" class="personality-test__radio-lbl personality-test__radio-lbl6">
+                            <div></div>
+                        </label>
+
+                        <input id="c7" type="radio" name="prtest2" class="personality-test__radio" disabled>
+                        <label for="c7" for="" class="personality-test__radio-lbl personality-test__radio-lbl7">
+                            <div></div>
+                        </label>
+
+                        <div class="personality-test__boxh">غير موافق</div>
+                    </div>
+                    <!-- 4end -->
+                    <h2 class="personality-test__box-h2">
+                        لا ترغب عادة في بدء المحادثات
+                    </h2>
+                    <div class="personality-test__box-wrpr">
+                        <div class="personality-test__boxh">موافق</div>
+
+                        <input id="d1" type="radio" name="prtest10" class="personality-test__radio" disabled>
+                        <label for="d1" class="personality-test__radio-lbl personality-test__radio-lbl1">
+                            <div></div>
+                        </label>
+
+                        <input id="d2" type="radio" name="prtest10" class="personality-test__radio" disabled>
+                        <label for="d2" class="personality-test__radio-lbl personality-test__radio-lbl2">
+                            <div></div>
+                        </label>
+
+                        <input id="d3" type="radio" name="prtest10" class="personality-test__radio" disabled>
+                        <label for="d3" class="personality-test__radio-lbl personality-test__radio-lbl3">
+                            <div></div>
+                        </label>
+
+                        <input id="d4" type="radio" name="prtest10" class="personality-test__radio" disabled>
+                        <label for="d4" class="personality-test__radio-lbl personality-test__radio-lbl4">
+                            <div></div>
+                        </label>
+
+                        <input id="d5" type="radio" name="prtest10" class="personality-test__radio" checked disabled>
+                        <label for="d5" for="" class="personality-test__radio-lbl personality-test__radio-lbl5">
+                            <div></div>
+                        </label>
+
+                        <input id="d6" type="radio" name="prtest10" class="personality-test__radio" disabled>
+                        <label for="d6" class="personality-test__radio-lbl personality-test__radio-lbl6">
+                            <div></div>
+                        </label>
+
+                        <input id="d7" type="radio" name="prtest10" class="personality-test__radio" disabled>
+                        <label for="d7" for="" class="personality-test__radio-lbl personality-test__radio-lbl7">
+                            <div></div>
+                        </label>
+
+                        <div class="personality-test__boxh">غير موافق</div>
+                    </div>
+                    <!-- 5end -->
+                    <h2 class="personality-test__box-h2">
+                        نادرًا ما تفعل شيء بدافع الفضول المحض
+                    </h2>
+                    <div class="personality-test__box-wrpr">
+                        <div class="personality-test__boxh">موافق</div>
+
+                        <input id="e1" type="radio" name="prtest4" class="personality-test__radio" disabled>
+                        <label for="e1" class="personality-test__radio-lbl personality-test__radio-lbl1">
+                            <div></div>
+                        </label>
+
+                        <input id="e2" type="radio" name="prtest4" class="personality-test__radio" disabled>
+                        <label for="e2" class="personality-test__radio-lbl personality-test__radio-lbl2">
+                            <div></div>
+                        </label>
+
+                        <input id="e3" type="radio" name="prtest4" class="personality-test__radio" disabled>
+                        <label for="e3" class="personality-test__radio-lbl personality-test__radio-lbl3">
+                            <div></div>
+                        </label>
+
+                        <input id="e4" type="radio" name="prtest4" class="personality-test__radio" disabled>
+                        <label for="e4" class="personality-test__radio-lbl personality-test__radio-lbl4">
+                            <div></div>
+                        </label>
+
+                        <input id="e5" type="radio" name="prtest4" class="personality-test__radio" disabled>
+                        <label for="e5" for="" class="personality-test__radio-lbl personality-test__radio-lbl5">
+                            <div></div>
+                        </label>
+
+                        <input id="e6" type="radio" name="prtest4" class="personality-test__radio" checked disabled>
+                        <label for="e6" class="personality-test__radio-lbl personality-test__radio-lbl6">
+                            <div></div>
+                        </label>
+
+                        <input id="e7" type="radio" name="prtest4" class="personality-test__radio">
+                        <label for="e7" for="" class="personality-test__radio-lbl personality-test__radio-lbl7">
+                            <div></div>
+                        </label>
+
+                        <div class="personality-test__boxh">غير موافق</div>
+                    </div>
+                    <!-- 6end -->
+                    <div class="flex-i gap-3 justify-center">
+                        <a href="test-form-view.html" class="testform-btn flex-a">
+                            1 / 10 التالي
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </a>
+                        <a href="#" class="testform-btn testform-btn--tr flex-a">
+                            إلغاء
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footerBox">
+                                <img src="assets/images/uae.png" alt="" class="footerBox__img">
+                                <a href="/" class="footerBox__logo">
+                                    <img src="assets/images/footer-logo.png" alt="" class="footerBox__logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footerBox">
+                                <h2 class="footerBox__h">هدفنا</h2>
+                                <p class="footerBox__p">
+                                    السعي وراء تسهيل ايجاد شريك الحياة الزوجية المثالي بطريقه عصريه مبتكره مع تاكيد
+                                    الالتزام والمحافظه على الهوية العربيه والعادات الاسلاميه
+                                </p>
+                                <ul class="ftrsmlist flex-i">
+                                    <li class="ftrsmlist__item">
+                                        <a href="#" class="ftrsmlist__link">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="ftrsmlist__item">
+                                        <a href="#" class="ftrsmlist__link">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="ftrsmlist__item">
+                                        <a href="#" class="ftrsmlist__link">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footerBox">
+                                <h2 class="footerBox__h">إتصل بنا</h2>
+                                <a href="#" class="footerBox__row flex-i">
+                                    <i class=" fa-solid fa-location-dot"></i>
+                                    <p class="footerBox__row-p">الإمارات العربية المتحدة</p>
+                                </a>
+                                <a href="tel:+9710503636836" class="footerBox__row flex-i">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p class="footerBox__row-p">(+971) 06 767 1 222</p>
+                                </a>
+                                <a href="tel:+9710503636836" class="footerBox__row flex-i">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p class="footerBox__row-p">(+971) 050 569 0 969</p>
+                                </a>
+                                <a href="https://wa.me/15551234567" class="footerBox__row flex-i">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <p class="footerBox__row-p">(+971) 050 36 36 8 36</p>
+                                </a>
+                                <a href="mailto:info@aldaarmarriage.ae" class="footerBox__row flex-i">
+                                    <i class=" fa-solid fa-envelope"></i>
+                                    <p class="footerBox__row-p">info@aldaarmarriage.ae</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="footerBox">
+                                <h2 class="footerBox__h">روابط</h2>
+                                <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                    <i class="fa-solid fa-lightbulb-exclamation"></i>
+                                    <p class="footerBox__row-p">من نحن</p>
+                                </a>
+                                <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                    <i class="fa-solid fa-compass"></i>
+                                    <p class="footerBox__row-p"> تعليمات</p>
+                                </a>
+                                <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                    <i class="fas fa-fax"></i>
+                                    <p class="footerBox__row-p">سياسة الخصوصية</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__btm text-center">
+                <p class="footer__btm-p">2022 © جميع الحقوق محفوظة لموقع الدار لخدمات الزواج</p>
+            </div>
+        </footer>
+    </div>
+    <!-- app-wrapper end -->
+    <script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="dist/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+</body>
+
+</html>

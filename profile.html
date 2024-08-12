@@ -1,0 +1,1228 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- Favicons -->
+	<link href="assets/images/favicon.png" rel="icon">
+	<!-- font aweasome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<!-- form select -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<!-- bootstrap 5.2.2 -->
+	<link href="dist/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- flatpicker -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<!-- fonts -->
+	<link href="dist/fonts/fonts.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- Main Stylesheet File -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="assets/css/ahsan.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="header__nav flex-i justify-between">
+					<a href="/" class="logo web-logo">
+						<img src="assets/images/logo2.png" alt="" class="logo__img">
+					</a>
+					<div class="flex-i">
+						<a href="/" class="mobile-logo">
+							<img src="assets/images/mobile-logo.png" alt="" class="mobile-logo__img">
+						</a>
+						<div class="navlist-wrpr">
+							<div class="navlist__btn">
+								<i class="fa-solid fa-ellipsis-vertical"></i>
+							</div>
+							<ul class="navlist flex-i">
+								<li class="navlist__item">
+									<a href="/" class="navlist__link">الرئيسية</a>
+								</li>
+								<li class="navlist__item">
+									<a href="about.html" class="navlist__link">من نحن</a>
+								</li>
+								<li class="navlist__item">
+									<a href="our-strategy.html" class="navlist__link">الإجراءات الإدارية</a>
+								</li>
+								<li class="navlist__item">
+									<a href="common-questions.html" class="navlist__link active">الأسئلة الشائعة</a>
+								</li>
+								<li class="navlist__item">
+									<a href="posts-page.html" class="navlist__link ">مرئيات</a>
+								</li>
+								<li class="navlist__item">
+									<a href="orders.html" class="navlist__link">الطلبات</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="header__btn-box flex-i">
+					<a href="login.html" class="header__login-btn">
+						<i class="fas fa-sign-in-alt"></i>
+						تسجيل الدخول
+					</a>
+					<a href="register.html" class="header__login-btn">
+						<i class="fas fa-user-plus"></i>
+						تسجيل حساب جديد
+					</a>
+				</div> -->
+
+					<div class="flex-i prf-noti-wrpr">
+						<div class="navbar_noti_box">
+							<div class="navbar_noti_box-ab"></div>
+							<i class=" fa-solid fa-bell bell1"></i>
+							<i class="fa-solid fa-bell bell2"></i>
+
+							<div class="navbar_noti_box_details">
+								<div class="navbar_noti_box_details_for_hover"></div>
+								<div class="notibox__hdr flex-i justify-between">
+									<p class="notibox__s1b1_t">الإشعارات</p>
+									<div class="markread_btn flex-a">
+										تحديد كمقروءة
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<img src="assets/images/team1.png" alt="" class="notibox__s1_img">
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<i class="fa-solid fa-bell"></i>
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<img src="assets/images/team2.png" alt="" class="notibox__s1_img">
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<i class="fa-solid fa-bell"></i>
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notiftr flex-a gap-2">
+									<input type="checkbox" class="checkbox" name="option3" value="option3" id="select-all">
+									<p class="notiftr_p">تحديد الكل</p>
+									<button class="notiftr__btn flex-a"><i class="fa-solid fa-trash-check trash"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="prf-drpbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="assets/images/profile.png" alt="" class="prf-drpbtn__img">
+								<i class="fa-solid fa-chevron-down"></i>
+							</button>
+							<!-- Dropdown menu -->
+							<div id="pfdrp" class="hidden pfdrp dropdown-menu">
+								<ul class="pfdrplist">
+									<li class="pfdrplist__item text-center namebox">
+										<h3 class="pfdrplist__name">Ahsan Iqbal</h3>
+										<div class="flex-i pfdrplist__item-wrpr justify-center">
+											<span class="pfdrplist__item-age">42</span>
+											<span class="pfdrplist__item-t">سنة</span>
+											<span class="pfdrplist__item-t">-</span>
+											<span class="pfdrplist__item-t">متزوج </span>
+										</div>
+										<div class="flex-i pfdrplist__item-wrpr justify-center">
+											<span class="pfdrplist__item-t">نسبة الإكتمال </span>
+										</div>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="profile.html" class="pfdrplist__link">
+											<i class="fa fa-user-edit"></i>
+											الملف الشخصي
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="settings.html" class="pfdrplist__link">
+											<i class="fa-solid fa-gear"></i>
+											الإعدادات
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="favorite.html" class="pfdrplist__link">
+											<i class="fas fa-heart"></i>
+											إهتماماتي
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="login.html" class="pfdrplist__link">
+											<i class="fas fa-power-off"></i>
+											تسجيل خروج
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+		<div class="nprf">
+			<div class="nprfbanner">
+				<div class="container">
+					<div class="nprfbanner-wrpr">
+						<div class="nprfbanner-row">
+							<i class="fa-solid fa-badge-check"></i>
+							<p class="nprfbanner-row-p">الملف الشخصي</p>
+						</div>
+						<div class="nprfbannerBox-outer">
+							<div class="nprfbannerBox">
+								<div class="nprfbannerBox-row1"></div>
+								<div class="nprfbannerBox-row2"></div>
+								<div class="nprfbannerBox-mini">
+									<i class="fa-solid fa-cake-candles"></i>
+									<a href="#" class="nprfbannerBox-mini__h">توافق ابراج الميلاد</a>
+								</div>
+								<div class="nprfbannerBox-mini">
+									<i class="fa-light fa-table"></i>
+									<a href="#" class="nprfbannerBox-mini__h">جدول تحديد البرج</a>
+								</div>
+								<div class="nprfbannerBox-mini">
+									<i class="fa-solid fa-people"></i>
+									<a href="#" class="nprfbannerBox-mini__h">توافق أنماط
+										الشخصيات</a>
+								</div>
+								<div class="nprfbannerBox-mini">
+									<i class="fa-solid fa-weight-scale"></i>
+									<a href="#" class="nprfbannerBox-mini__h">
+										الوزن المثالي BMI
+									</a>
+								</div>
+							</div>
+							<div class="nprfbannerBox-outer-row flex-i justify-between">
+								<div class="nprfbannerBox-outer-row-50">
+									<div class="nprfbannerBox-outer-rowmini">
+										<i class="fa-solid fa-planet-ringed"></i>
+									</div>
+									<p class="nprfbannerBox-outer-row-p">توافق الميلاد</p>
+									<h3 class="nprfbannerBox-outer-row-h3">60%</h3>
+								</div>
+								<div class="nprfbannerBox-outer-row-50">
+									<div class="nprfbannerBox-outer-rowmini">
+										<i class="fa-solid fa-people"></i>
+									</div>
+									<p class="nprfbannerBox-outer-row-p">توافق الطلبات</p>
+									<h3 class="nprfbannerBox-outer-row-h3">40%</h3>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="nprf-body">
+				<div class="container">
+					<div class="nprf-body-row">
+						<div class="nprfbodybox1">
+							<div class="nprfbodybox1-mini">
+								<img src="assets/images/profile.png" alt="" class="nprfbodybox1-mini__img">
+								<div class="nprfbodybox1-mini-box flex-a r-50">
+									<i class="fa-solid fa-crown"></i>
+								</div>
+							</div>
+							<div class="nprfbodybox1__content">
+								<div class="nprfbodybox1__contentrow flex-i ">
+									<span class="sp1">35 سنة</span>-
+									<span class="sp2">مطلق</span>-
+									<span class="sp3">مقيم في الإمارات</span>
+								</div>
+								<div class="nprfbodybox1__contentrow2 flex-i">
+									<span class="sp1">عضوية مميزة</span>
+									<ul class="nprfbodybox1List flex-a">
+										<li>
+											<i class="fa-solid fa-star"></i>
+										</li>
+										<li>
+											<i class="fa-solid fa-star"></i>
+										</li>
+										<li>
+											<i class="fa-solid fa-star"></i>
+										</li>
+										<li>
+											<i class="fa-solid fa-star"></i>
+										</li>
+										<li>
+											<i class="fa-solid fa-star"></i>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="nprfbodybox2">
+							<div class="nprfbodybox2Mini">
+								<input type="checkbox" name="" id="fav1" class="nprfbodybox2Mini__input">
+								<label for="fav1" class="nprfbodybox2Mini__label">
+									<i class="fa-solid fa-heart"></i>
+									<i class="fa-solid fa-heart"></i>
+								</label>
+								<p class="nprfbodybox2Mini-p">أظهر اهتمامك</p>
+							</div>
+							<div class="nprfbodybox2-tab">
+								<i class="fa-solid fa-calendar-days"></i>
+								<span class="nprfbodybox2-tab-1">تاريخ الإنضمام :</span>
+								<span class="nprfbodybox2-tab-2">منذ عام</span>
+								-
+								<span class="bggrn"></span>
+								<span class="nprfbodybox2-tab-1">تاريخ الإنضمام :</span>
+								<span class="nprfbodybox2-tab-2">منذ عام</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="nprfbdyinner">
+						<div class="nprfbdyinner-row flex-i">
+							<div class="nprfbdyinner-row-mini flex-a r-50">
+								<i class="fa-solid fa-info"></i>
+							</div>
+							<p class="nprfbdyinner-row-p">ملخص عنك</p>
+						</div>
+						<div class="nprfbdyinnerBox">
+							<h3 class="nprfbdyinnerBox__h">ما يجعلك مميز</h3>
+							<p class="nprfbdyinnerBox__p">
+								هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان
+								لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
+								الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن
+								لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد
+							</p>
+							<h3 class="nprfbdyinnerBox__h">مواصفات الشريك الذي تبحث عنه</h3>
+							<p class="nprfbdyinnerBox__p">
+								هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان
+								لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
+								الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن
+								لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد
+							</p>
+						</div>
+
+						<div class="nprfbdyinner-row flex-i">
+							<div class="nprfbdyinner-row-mini nprfbdyinner-row-mini1 flex-a r-50">
+								<i class="fa-solid fa-rings-wedding"></i>
+							</div>
+							<p class="nprfbdyinner-row-p">طلبات الإرتباط</p>
+						</div>
+
+						<div class="nprfbdyinner2Box">
+							<div class="row nprfbdyinner2Box-row">
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-flag"></i>
+										<p class="nprfbdyinner2Box-mini__p">الجنسية المراد الإرتباط بها</p>
+										<span class="nprfbdyinner2Box-mini-spn">مصرية</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-circle-check"></i>
+										<p class="nprfbdyinner2Box-mini__p">العرق </p>
+										<span class="nprfbdyinner2Box-mini-spn">حر</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-circle-check"></i>
+										<p class="nprfbdyinner2Box-mini__p"> هل ترغب بالتسجيل في دفتر العائلة</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+										<div class="nprfbdyinner2Box-mini-btn">
+											<i class="fa-solid fa-info"></i>
+											<div class="toltipbox">
+												خلاصة القيد
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-flag"></i>
+										<p class="nprfbdyinner2Box-mini__p">يوجد جنسية سابقة لأم الشريك </p>
+										<span class="nprfbdyinner2Box-mini-spn">لا أرغب</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-rings-wedding"></i>
+										<p class="nprfbdyinner2Box-mini__p"> الحالة الإجتماعية</p>
+										<span class="nprfbdyinner2Box-mini-spn">مطلق</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-light fa-id-card"></i>
+										<p class="nprfbdyinner2Box-mini__p">العمر من </p>
+										<span class="nprfbdyinner2Box-mini-spn">35</span>
+										<p class="nprfbdyinner2Box-mini__p"> الي </p>
+										<span class="nprfbdyinner2Box-mini-spn">40 سنة</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-map-location-dot"></i>
+										<p class="nprfbdyinner2Box-mini__p"> رغبة توفير الشريك من إمارة محددة</p>
+										<span class="nprfbdyinner2Box-mini-spn">لا</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-bed-front"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل ترغب بتحديد المبيت </p>
+										<span class="nprfbdyinner2Box-mini-spn">لا أرغب بالمبيت</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-line-height"></i>
+										<p class="nprfbdyinner2Box-mini__p"> الطول من</p>
+										<span class="nprfbdyinner2Box-mini-spn">175</span>
+										<p class="nprfbdyinner2Box-mini__p"> الي</p>
+										<span class="nprfbdyinner2Box-mini-spn">سم/ 175</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-house-heart"></i>
+										<p class="nprfbdyinner2Box-mini__p">القدرة على توفير السكن </p>
+										<span class="nprfbdyinner2Box-mini-spn">في سكن العيلة</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-file-certificate"></i>
+										<p class="nprfbdyinner2Box-mini__p"> مستوي التعليم</p>
+										<span class="nprfbdyinner2Box-mini-spn">جامعي</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-weight-hanging"></i>
+										<p class="nprfbdyinner2Box-mini__p"> الوزن من</p>
+										<span class="nprfbdyinner2Box-mini-spn">60</span>
+										<p class="nprfbdyinner2Box-mini__p"> الي </p>
+										<span class="nprfbdyinner2Box-mini-spn">كجم/ 175</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="nprfbdyinner2Box-mini__p">مكان السكن في حالة الزواج</p>
+										<span class="nprfbdyinner2Box-mini-spn">عجمان</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-children"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل ترغب بالشريك الذي لديه أطفال</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class=" fa-solid fa-gifts"></i>
+										<p class="nprfbdyinner2Box-mini__p">المهر من </p>
+										<span class="nprfbdyinner2Box-mini-spn">10</span>
+										<p class="nprfbdyinner2Box-mini__p">الي</p>
+										<span class="nprfbdyinner2Box-mini-spn">15 / الف درهم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-apartment"></i>
+										<p class="nprfbdyinner2Box-mini__p">نوع السكن</p>
+										<span class="nprfbdyinner2Box-mini-spn">بيت</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-family"></i>
+										<p class="nprfbdyinner2Box-mini__p">الطابع العائلي</p>
+										<span class="nprfbdyinner2Box-mini-spn">محافظه</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class=" fa-solid fa-gifts"></i>
+										<p class="nprfbdyinner2Box-mini__p">المقدم من</p>
+										<span class="nprfbdyinner2Box-mini-spn">5</span>
+										<p class="nprfbdyinner2Box-mini__p">الي</p>
+										<span class="nprfbdyinner2Box-mini-spn">7 / الف درهم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-droplet"></i>
+										<p class="nprfbdyinner2Box-mini__p">حدد لون البشرة</p>
+										<span class="nprfbdyinner2Box-mini-spn">أسمر فاتح</span>
+										<div class="nprfbdyinner2Box-mini-btn">
+											<i class="fa-solid fa-info"></i>
+											<div class="toltipbox toltipbox2">
+												<img src="assets/images/skintones.png" alt="" class="toltipbox__img">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-money-bill-trend-up"></i>
+										<p class="nprfbdyinner2Box-mini__p">مستوي الحالة المادية</p>
+										<span class="nprfbdyinner2Box-mini-spn">متوسط</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class=" fa-solid fa-gifts"></i>
+										<p class="nprfbdyinner2Box-mini__p">المؤخر من</p>
+										<span class="nprfbdyinner2Box-mini-spn">3</span>
+										<p class="nprfbdyinner2Box-mini__p">الي</p>
+										<span class="nprfbdyinner2Box-mini-spn">10 / الف درهم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-light fa-books"></i>
+										<p class="nprfbdyinner2Box-mini__p">المذهب</p>
+										<span class="nprfbdyinner2Box-mini-spn">سني</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-briefcase"></i>
+										<p class="nprfbdyinner2Box-mini__p">رغبة العمل بالشريك</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class=" fa-solid fa-gifts"></i>
+										<p class="nprfbdyinner2Box-mini__p">تجهيز العروس من</p>
+										<span class="nprfbdyinner2Box-mini-spn">15</span>
+										<p class="nprfbdyinner2Box-mini__p">الي</p>
+										<span class="nprfbdyinner2Box-mini-spn">20 /الف درهم</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nprfbdyinner-row flex-i">
+							<div class="nprfbdyinner-row-mini nprfbdyinner-row-mini3 flex-a r-50">
+								<i class="fa-solid fa-user"></i>
+							</div>
+							<p class="nprfbdyinner-row-p">المعلومات الشخصية</p>
+						</div>
+						<div class="nprfbdyinner2Box nprfbdyinner2Box3">
+							<div class="row nprfbdyinner2Box-row">
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-droplet"></i>
+										<p class="nprfbdyinner2Box-mini__p">حدد لون البشرة</p>
+										<span class="nprfbdyinner2Box-mini-spn">أسمر فاتح</span>
+										<div class="nprfbdyinner2Box-mini-btn">
+											<i class="fa-solid fa-droplet"></i>
+											<div class="toltipbox toltipbox2">
+												<img src="assets/images/skintones.png" alt="" class="toltipbox__img">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-ring-diamond"></i>
+										<p class="nprfbdyinner2Box-mini__p">عدد مرات الزواج ( الوضع الحالي )</p>
+										<span class="nprfbdyinner2Box-mini-spn">2</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-eye"></i>
+										<p class="nprfbdyinner2Box-mini__p">لون العيون</p>
+										<span class="nprfbdyinner2Box-mini-spn">ازرق</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-circle-check"></i>
+										<p class="nprfbdyinner2Box-mini__p">العرق</p>
+										<span class="nprfbdyinner2Box-mini-spn">حر</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-person-breastfeeding"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل ترغب بالإنجاب بعد الزواج</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-circle-check"></i>
+										<p class="nprfbdyinner2Box-mini__p">البنية الجسمية</p>
+										<span class="nprfbdyinner2Box-mini-spn">متوسط</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-line-height"></i>
+										<p class="nprfbdyinner2Box-mini__p">الطول</p>
+										<span class="nprfbdyinner2Box-mini-spn"> سم / 175</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-house-heart"></i>
+										<p class="nprfbdyinner2Box-mini__p">وضع السكن الحالي للعميل</p>
+										<span class="nprfbdyinner2Box-mini-spn">خاص</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-pills"></i>
+										<p class="nprfbdyinner2Box-mini__p">الوضع الصحي</p>
+										<span class="nprfbdyinner2Box-mini-spn">مشاكل صحية بسيطة</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-weight-hanging"></i>
+										<p class="nprfbdyinner2Box-mini__p">الوزن</p>
+										<span class="nprfbdyinner2Box-mini-spn"> 78 / كجم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-file-certificate"></i>
+										<p class="nprfbdyinner2Box-mini__p">مستوي التعليم</p>
+										<span class="nprfbdyinner2Box-mini-spn">جامعي </span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-pills"></i>
+										<p class="nprfbdyinner2Box-mini__p">ما هي المشكلة او الإعاقة</p>
+										<span class="nprfbdyinner2Box-mini-spn">سكري </span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-weight-hanging"></i>
+										<p class="nprfbdyinner2Box-mini__p"> مؤشر كتلة الجسم</p>
+										<span class="nprfbdyinner2Box-mini-spn">BMI 19.79</span>
+										<span class="nprfbdyinner2Box-mini-spn2"> / وزن طبيعي </span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-briefcase"></i>
+										<p class="nprfbdyinner2Box-mini__p">الوظيفة / العمل</p>
+										<span class="nprfbdyinner2Box-mini-spn">خاص</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-smoking"></i>
+										<p class="nprfbdyinner2Box-mini__p">التدخين</p>
+										<span class="nprfbdyinner2Box-mini-spn">لا</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-light fa-family"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل يوجد ولي امر</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-money-bill-trend-up"></i>
+										<p class="nprfbdyinner2Box-mini__p">الحالة المادية</p>
+										<span class="nprfbdyinner2Box-mini-spn">متوسطه</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-pen-paintbrush"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل لديك وشم</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-family"></i>
+										<p class="nprfbdyinner2Box-mini__p">صفة ولي الأمر</p>
+										<span class="nprfbdyinner2Box-mini-spn">عم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-light fa-user-hair-long"></i>
+										<p class="nprfbdyinner2Box-mini__p">لون الشعر</p>
+										<span class="nprfbdyinner2Box-mini-spn">احمر</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-pen-paintbrush"></i>
+										<p class="nprfbdyinner2Box-mini__p">في اي جزء من الجسم يوجد وشم</p>
+										<span class="nprfbdyinner2Box-mini-spn">الكتف</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-rings-wedding"></i>
+										<p class="nprfbdyinner2Box-mini__p">الحالة الإجتماعية</p>
+										<span class="nprfbdyinner2Box-mini-spn">اعزب</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-light fa-user-hair-long"></i>
+										<p class="nprfbdyinner2Box-mini__p">طول الشعر</p>
+										<span class="nprfbdyinner2Box-mini-spn">طويل</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-music"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل تحب الإستماع للموسيقي</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-children"></i>
+										<p class="nprfbdyinner2Box-mini__p">لديك أطفال</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-light fa-user-hair-long"></i>
+										<p class="nprfbdyinner2Box-mini__p">نوع الشعر</p>
+										<span class="nprfbdyinner2Box-mini-spn">مموج</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-dog"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل تحب او تمتلك حيوانات منزلية</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-children"></i>
+										<p class="nprfbdyinner2Box-mini__p">عدد الأطفال</p>
+										<span class="nprfbdyinner2Box-mini-spn">3</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-aperture"></i>
+										<p class="nprfbdyinner2Box-mini__p">عدة النظر</p>
+										<span class="nprfbdyinner2Box-mini-spn">عدسات</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-dog"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل لديك حساسية من تربية الحيوانات المنزلية</p>
+										<span class="nprfbdyinner2Box-mini-spn">لا</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="nprfbdyinner-row flex-i">
+							<div class="nprfbdyinner-row-mini nprfbdyinner-row-mini4 flex-a r-50">
+								<i class="fa-solid fa-pen-nib"></i>
+							</div>
+							<p class="nprfbdyinner-row-p">المعلومات الشخصية</p>
+						</div>
+						<div class="nprfbdyinner2Box nprfbdyinner2Box4">
+							<div class="row nprfbdyinner2Box-row">
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-light fa-users"></i>
+										<p class="nprfbdyinner2Box-mini__p">الجنس</p>
+										<span class="nprfbdyinner2Box-mini-spn">ذكر</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-light fa-books"></i>
+										<p class="nprfbdyinner2Box-mini__p">المذهب</p>
+										<span class="nprfbdyinner2Box-mini-spn">سني</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="nprfbdyinner2Box-mini__p">مكان الإقامة خارج الدولة</p>
+										<span class="nprfbdyinner2Box-mini-spn">اسطنبول</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-planet-ringed"></i>
+										<p class="nprfbdyinner2Box-mini__p">البرج الميلادي</p>
+										<span class="nprfbdyinner2Box-mini-spn">الحوت</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-flag"></i>
+										<p class="nprfbdyinner2Box-mini__p">الجنسية</p>
+										<span class="nprfbdyinner2Box-mini-spn">تركيه</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="nprfbdyinner2Box-mini__p">المدينة في البلد الأم ( للوافدين فقط )</p>
+										<span class="nprfbdyinner2Box-mini-spn">اسطنبول</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-circle-check"></i>
+										<p class="nprfbdyinner2Box-mini__p">القبيلة</p>
+										<span class="nprfbdyinner2Box-mini-spn">بن هاشم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-flag"></i>
+										<p class="nprfbdyinner2Box-mini__p">هل تقيم خارج الدولة</p>
+										<span class="nprfbdyinner2Box-mini-spn">نعم</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-flag"></i>
+										<p class="nprfbdyinner2Box-mini__p">جنسية الأم الحالية</p>
+										<span class="nprfbdyinner2Box-mini-spn">تونسية</span>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="nprfbdyinner2Box-mini flex-i">
+										<i class="fa-solid fa-flag"></i>
+										<p class="nprfbdyinner2Box-mini__p">جنسية الأم السابقة ( ان وجدت )</p>
+										<span class="nprfbdyinner2Box-mini-spn">لا يوجد</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- nprf end -->
+		<div class="simimem">
+			<div class="container">
+				<h2 class="simimem__h">أعضاء مشابهون</h2>
+			</div>
+			<div class="simimemoutr">
+				<div class="container">
+					<div class="simimemoutr-wrpr">
+						<div class="simimemBox1">
+							<div class="simimemCrd">
+								<div class="simimemCrd-mini">
+									<img src="assets/images/prf2.png" alt="" class="simimemCrd-mini__img">
+									<div class="simimemCrd-mini-box flex-a r-50">
+										<i class="fa-solid fa-crown"></i>
+									</div>
+								</div>
+								<div class="simimemCrdr1 flex-i justify-between">
+									<div class="flex-i sa gap-1">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="simimemCrdr1-p">الإمارات / رأس الخيمة</p>
+									</div>
+									<div class="flex-i sb  gap-1">
+										<i class="fa-solid fa-balloons"></i>
+										<p class="simimemCrdr1-p">مطلق</p>
+									</div>
+								</div>
+								<div class="simimemCrdr2 flex-i justify-between">
+									<div class="simimemCrdr2-p">
+										<i class="fa-light fa-id-card"></i>
+										<span>35 سنة</span>
+										<i class="fa-solid fa-pills"></i>
+										-
+										<span>سكري</span>
+									</div>
+									<input type="checkbox" name="" id="fav11" class="nprfbodybox2Mini__input">
+									<label for="fav11" class="nprfbodybox2Mini__label nprfbodybox2Mini__label2">
+										<i class="fa-solid fa-heart"></i>
+										<i class="fa-solid fa-heart"></i>
+									</label>
+								</div>
+							</div>
+							<div class="simimemCrd">
+								<div class="simimemCrd-mini">
+									<img src="assets/images/prf2.png" alt="" class="simimemCrd-mini__img">
+									<div class="simimemCrd-mini-box flex-a r-50">
+										<i class="fa-solid fa-crown"></i>
+									</div>
+								</div>
+								<div class="simimemCrdr1 flex-i justify-between">
+									<div class="flex-i sa gap-1">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="simimemCrdr1-p">الإمارات / رأس الخيمة</p>
+									</div>
+									<div class="flex-i sb  gap-1">
+										<i class="fa-solid fa-balloons"></i>
+										<p class="simimemCrdr1-p">مطلق</p>
+									</div>
+								</div>
+								<div class="simimemCrdr2 flex-i justify-between">
+									<div class="simimemCrdr2-p">
+										<i class="fa-light fa-id-card"></i>
+										<span>35 سنة</span>
+										<i class="fa-solid fa-pills"></i>
+										-
+										<span>سكري</span>
+									</div>
+									<input type="checkbox" name="" id="fav11" class="nprfbodybox2Mini__input">
+									<label for="fav11" class="nprfbodybox2Mini__label nprfbodybox2Mini__label2">
+										<i class="fa-solid fa-heart"></i>
+										<i class="fa-solid fa-heart"></i>
+									</label>
+								</div>
+							</div>
+							<div class="simimemCrd">
+								<div class="simimemCrd-mini">
+									<img src="assets/images/prf2.png" alt="" class="simimemCrd-mini__img">
+									<div class="simimemCrd-mini-box flex-a r-50">
+										<i class="fa-solid fa-crown"></i>
+									</div>
+								</div>
+								<div class="simimemCrdr1 flex-i justify-between">
+									<div class="flex-i sa gap-1">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="simimemCrdr1-p">الإمارات / رأس الخيمة</p>
+									</div>
+									<div class="flex-i sb  gap-1">
+										<i class="fa-solid fa-balloons"></i>
+										<p class="simimemCrdr1-p">مطلق</p>
+									</div>
+								</div>
+								<div class="simimemCrdr2 flex-i justify-between">
+									<div class="simimemCrdr2-p">
+										<i class="fa-light fa-id-card"></i>
+										<span>35 سنة</span>
+										<i class="fa-solid fa-pills"></i>
+										-
+										<span>سكري</span>
+									</div>
+									<input type="checkbox" name="" id="fav11" class="nprfbodybox2Mini__input">
+									<label for="fav11" class="nprfbodybox2Mini__label nprfbodybox2Mini__label2">
+										<i class="fa-solid fa-heart"></i>
+										<i class="fa-solid fa-heart"></i>
+									</label>
+								</div>
+							</div>
+							<div class="simimemCrd">
+								<div class="simimemCrd-mini">
+									<img src="assets/images/prf2.png" alt="" class="simimemCrd-mini__img">
+									<div class="simimemCrd-mini-box flex-a r-50">
+										<i class="fa-solid fa-crown"></i>
+									</div>
+								</div>
+								<div class="simimemCrdr1 flex-i justify-between">
+									<div class="flex-i sa gap-1">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="simimemCrdr1-p">الإمارات / رأس الخيمة</p>
+									</div>
+									<div class="flex-i sb  gap-1">
+										<i class="fa-solid fa-balloons"></i>
+										<p class="simimemCrdr1-p">مطلق</p>
+									</div>
+								</div>
+								<div class="simimemCrdr2 flex-i justify-between">
+									<div class="simimemCrdr2-p">
+										<i class="fa-light fa-id-card"></i>
+										<span>35 سنة</span>
+										<i class="fa-solid fa-pills"></i>
+										-
+										<span>سكري</span>
+									</div>
+									<input type="checkbox" name="" id="fav11" class="nprfbodybox2Mini__input">
+									<label for="fav11" class="nprfbodybox2Mini__label nprfbodybox2Mini__label2">
+										<i class="fa-solid fa-heart"></i>
+										<i class="fa-solid fa-heart"></i>
+									</label>
+								</div>
+							</div>
+							<div class="simimemCrd">
+								<div class="simimemCrd-mini">
+									<img src="assets/images/prf2.png" alt="" class="simimemCrd-mini__img">
+									<div class="simimemCrd-mini-box flex-a r-50">
+										<i class="fa-solid fa-crown"></i>
+									</div>
+								</div>
+								<div class="simimemCrdr1 flex-i justify-between">
+									<div class="flex-i sa gap-1">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="simimemCrdr1-p">الإمارات / رأس الخيمة</p>
+									</div>
+									<div class="flex-i sb  gap-1">
+										<i class="fa-solid fa-balloons"></i>
+										<p class="simimemCrdr1-p">مطلق</p>
+									</div>
+								</div>
+								<div class="simimemCrdr2 flex-i justify-between">
+									<div class="simimemCrdr2-p">
+										<i class="fa-light fa-id-card"></i>
+										<span>35 سنة</span>
+										<i class="fa-solid fa-pills"></i>
+										-
+										<span>سكري</span>
+									</div>
+									<input type="checkbox" name="" id="fav11" class="nprfbodybox2Mini__input">
+									<label for="fav11" class="nprfbodybox2Mini__label nprfbodybox2Mini__label2">
+										<i class="fa-solid fa-heart"></i>
+										<i class="fa-solid fa-heart"></i>
+									</label>
+								</div>
+							</div>
+							<div class="simimemCrd">
+								<div class="simimemCrd-mini">
+									<img src="assets/images/prf2.png" alt="" class="simimemCrd-mini__img">
+									<div class="simimemCrd-mini-box flex-a r-50">
+										<i class="fa-solid fa-crown"></i>
+									</div>
+								</div>
+								<div class="simimemCrdr1 flex-i justify-between">
+									<div class="flex-i sa gap-1">
+										<i class="fa-solid fa-location-dot"></i>
+										<p class="simimemCrdr1-p">الإمارات / رأس الخيمة</p>
+									</div>
+									<div class="flex-i sb  gap-1">
+										<i class="fa-solid fa-balloons"></i>
+										<p class="simimemCrdr1-p">مطلق</p>
+									</div>
+								</div>
+								<div class="simimemCrdr2 flex-i justify-between">
+									<div class="simimemCrdr2-p">
+										<i class="fa-light fa-id-card"></i>
+										<span>35 سنة</span>
+										<i class="fa-solid fa-pills"></i>
+										-
+										<span>سكري</span>
+									</div>
+									<input type="checkbox" name="" id="fav11" class="nprfbodybox2Mini__input">
+									<label for="fav11" class="nprfbodybox2Mini__label nprfbodybox2Mini__label2">
+										<i class="fa-solid fa-heart"></i>
+										<i class="fa-solid fa-heart"></i>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="simimemBox2">
+							<img src="assets/images/pf-bg.png" alt="" class="simimemBox2__img">
+							<div class="simimemBox2-mini">
+								<p class="simimemBox2-mini-p">أكثر من </p>
+								<h3 class="simimemBox2-mini__h">
+									3 مليون
+									<span>مشترك</span>
+								</h3>
+								<a href="#" class="simimem__link">المزيد</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<img src="assets/images/uae.png" alt="" class="footerBox__img">
+								<a href="/" class="footerBox__logo">
+									<img src="assets/images/footer-logo.png" alt="" class="footerBox__logo-img">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">هدفنا</h2>
+								<p class="footerBox__p">
+									السعي وراء تسهيل ايجاد شريك الحياة الزوجية المثالي بطريقه عصريه مبتكره مع تاكيد الالتزام والمحافظه على
+									الهوية العربيه والعادات الاسلاميه
+								</p>
+								<ul class="ftrsmlist flex-i">
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-instagram"></i>
+										</a>
+									</li>
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-twitter"></i>
+										</a>
+									</li>
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-facebook-f"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">إتصل بنا</h2>
+								<a href="#" class="footerBox__row flex-i">
+									<i class=" fa-solid fa-location-dot"></i>
+									<p class="footerBox__row-p">الإمارات العربية المتحدة</p>
+								</a>
+								<a href="tel:+9710503636836" class="footerBox__row flex-i">
+									<i class="fa-solid fa-phone"></i>
+									<p class="footerBox__row-p">(+971) 06 767 1 222</p>
+								</a>
+								<a href="tel:+9710503636836" class="footerBox__row flex-i">
+									<i class="fa-solid fa-phone"></i>
+									<p class="footerBox__row-p">(+971) 050 569 0 969</p>
+								</a>
+								<a href="https://wa.me/15551234567" class="footerBox__row flex-i">
+									<i class="fa-brands fa-whatsapp"></i>
+									<p class="footerBox__row-p">(+971) 050 36 36 8 36</p>
+								</a>
+								<a href="mailto:info@aldaarmarriage.ae" class="footerBox__row flex-i">
+									<i class=" fa-solid fa-envelope"></i>
+									<p class="footerBox__row-p">info@aldaarmarriage.ae</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">روابط</h2>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fa-solid fa-lightbulb-exclamation"></i>
+									<p class="footerBox__row-p">من نحن</p>
+								</a>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fa-solid fa-compass"></i>
+									<p class="footerBox__row-p"> تعليمات</p>
+								</a>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fas fa-fax"></i>
+									<p class="footerBox__row-p">سياسة الخصوصية</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__btm text-center">
+				<p class="footer__btm-p">2022 © جميع الحقوق محفوظة لموقع الدار لخدمات الزواج</p>
+			</div>
+		</footer>
+	</div>
+	<div class="modal fade" id="delmdl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content delmdl">
+				<div class="delmdlbody">
+					<div class="delmdlhdr flex-a">
+						<div class="delmdlhdr-box">
+							<i class="fa-solid fa-trash-can-check"></i>
+						</div>
+					</div>
+					<p class="delmdlhdr-p">
+						هل أنت متأكد من
+						<br>
+						تريد حذف حسابك نهائياً
+					</p>
+					<p class="delmdlhdr-p2">
+						سيتم حذف حسابك وستفقد كل البيانات الموجوده بالموقع
+					</p>
+				</div>
+				<div class="delmdlftr flex-i justify-content-center gap-3">
+					<button type="submit" class="delmdlftr-btn delmdlftr-btn2">حذف</button>
+					<button type="button" data-bs-dismiss="modal" class="delmdlftr-btn delmdlftr-btn1">إلغاء</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="delmdl2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content delmdl delmdl2">
+				<div class="delmdlbody">
+					<div class="delmdlhdr flex-a">
+						<div class="delmdlhdr-box">
+							<i class="fa-solid fa-trash-can-check"></i>
+						</div>
+					</div>
+					<p class="delmdlhdr-p">
+						هل انت متأك من
+						<br>
+						تريد تعطيل هذا الحساب
+					</p>
+					<p class="delmdlhdr-p2">
+						سيتم حذف حسابك وستفقد كل البيانات الموجوده بالموقع
+					</p>
+				</div>
+				<div class="delmdlftr flex-i justify-content-center gap-3">
+					<button type="submit" class="delmdlftr-btn delmdlftr-btn2">حذف</button>
+					<button type="button" data-bs-dismiss="modal" class="delmdlftr-btn delmdlftr-btn1">إلغاء</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- app-wrapper end -->
+	<script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="dist/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/form-validation.js"></script>
+</body>
+
+</html>

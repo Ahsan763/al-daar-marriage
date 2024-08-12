@@ -1,0 +1,494 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wishlist</title>
+	<!-- Favicons -->
+	<link href="assets/images/favicon.png" rel="icon">
+	<!-- font aweasome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<!-- form select -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+	<!-- bootstrap 5.2.2 -->
+	<link href="dist/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- flatpicker -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<!-- fonts -->
+	<link href="dist/fonts/fonts.css" rel="stylesheet">
+	<!-- Main Stylesheet File -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="assets/css/ahsan.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="header__nav flex-i justify-between">
+					<a href="/" class="logo web-logo">
+						<img src="assets/images/logo2.png" alt="" class="logo__img">
+					</a>
+					<div class="flex-i">
+						<a href="/" class="mobile-logo">
+							<img src="assets/images/mobile-logo.png" alt="" class="mobile-logo__img">
+						</a>
+						<div class="navlist-wrpr">
+							<div class="navlist__btn">
+								<i class="fa-solid fa-ellipsis-vertical"></i>
+							</div>
+							<ul class="navlist flex-i">
+								<li class="navlist__item">
+									<a href="/" class="navlist__link">الرئيسية</a>
+								</li>
+								<li class="navlist__item">
+									<a href="about.html" class="navlist__link">من نحن</a>
+								</li>
+								<li class="navlist__item">
+									<a href="our-strategy.html" class="navlist__link">الإجراءات الإدارية</a>
+								</li>
+								<li class="navlist__item">
+									<a href="common-questions.html" class="navlist__link">الأسئلة الشائعة</a>
+								</li>
+								<li class="navlist__item">
+									<a href="posts-page.html" class="navlist__link active">مرئيات</a>
+								</li>
+								<li class="navlist__item">
+									<a href="orders.html" class="navlist__link">الطلبات</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="header__btn-box flex-i d-none">
+					<a href="login.html" class="header__login-btn">
+						<i class="fas fa-sign-in-alt"></i>
+						تسجيل الدخول
+					</a>
+					<a href="register.html" class="header__login-btn">
+						<i class="fas fa-user-plus"></i>
+						تسجيل حساب جديد
+					</a>
+				</div> -->
+					<div class="flex-i prf-noti-wrpr">
+						<div class="navbar_noti_box">
+							<div class="navbar_noti_box-ab"></div>
+							<i class=" fa-solid fa-bell bell1"></i>
+							<i class="fa-solid fa-bell bell2"></i>
+
+							<div class="navbar_noti_box_details">
+								<div class="navbar_noti_box_details_for_hover"></div>
+								<div class="notibox__hdr flex-i justify-between">
+									<p class="notibox__s1b1_t">الإشعارات</p>
+									<div class="markread_btn flex-a">
+										تحديد كمقروءة
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<img src="assets/images/team1.png" alt="" class="notibox__s1_img">
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<i class="fa-solid fa-bell"></i>
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<img src="assets/images/team2.png" alt="" class="notibox__s1_img">
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<i class="fa-solid fa-bell"></i>
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notiftr flex-a gap-2">
+									<input type="checkbox" class="checkbox" name="option3" value="option3" id="select-all">
+									<p class="notiftr_p">تحديد الكل</p>
+									<button class="notiftr__btn flex-a"><i class="fa-solid fa-trash-check trash"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="prf-drpbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="assets/images/profile.png" alt="" class="prf-drpbtn__img">
+								<i class="fa-solid fa-chevron-down"></i>
+							</button>
+							<!-- Dropdown menu -->
+							<div id="pfdrp" class="hidden pfdrp dropdown-menu">
+								<ul class="pfdrplist">
+									<li class="pfdrplist__item text-center namebox">
+										<h3 class="pfdrplist__name">Ahsan Iqbal</h3>
+										<div class="flex-i pfdrplist__item-wrpr justify-center">
+											<span class="pfdrplist__item-age">42</span>
+											<span class="pfdrplist__item-t">سنة</span>
+											<span class="pfdrplist__item-t">-</span>
+											<span class="pfdrplist__item-t">متزوج </span>
+										</div>
+										<div class="flex-i pfdrplist__item-wrpr justify-center">
+											<span class="pfdrplist__item-t">نسبة الإكتمال </span>
+										</div>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="profile.html" class="pfdrplist__link">
+											<i class="fa fa-user-edit"></i>
+											الملف الشخصي
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="settings.html" class="pfdrplist__link">
+											<i class="fa-solid fa-gear"></i>
+											الإعدادات
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="favorite.html" class="pfdrplist__link">
+											<i class="fas fa-heart"></i>
+											إهتماماتي
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="login.html" class="pfdrplist__link">
+											<i class="fas fa-power-off"></i>
+											تسجيل خروج
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+		<div class="breadcrums">
+			<div class="container-fluid">
+				<div class="breadcrums-box flex-i">
+					<i class="fa-solid fa-badge-check"></i>
+					<p class="breadcrums-box-p">إهتماماتي</p>
+				</div>
+			</div>
+		</div>
+		<section class="wishlist">
+			<div class="wishlist__aside">
+				<ul class="wishlist__asidelist">
+					<li class="wishlist__asidelist-item flex-i justify-between">
+						<p class="wishlist__asidelist-item-p">توافق الشخصية</p>
+						<div class="status flex gap-3  wrapper al-center">
+							<input type="checkbox" id="toggle1" class="idad-btn-box__input">
+							<label for="toggle1" class="idad-btn-box__label"></label>
+						</div>
+					</li>
+					<li class="wishlist__asidelist-item flex-i justify-between">
+						<p class="wishlist__asidelist-item-p">توافق الميلاد</p>
+						<div class="status flex gap-3  wrapper al-center">
+							<input type="checkbox" id="toggle2" class="idad-btn-box__input">
+							<label for="toggle2" class="idad-btn-box__label"></label>
+						</div>
+					</li>
+					<li class="wishlist__asidelist-item flex-i justify-between">
+						<p class="wishlist__asidelist-item-p">توافق الأبراج</p>
+						<div class="status flex gap-3  wrapper al-center">
+							<input type="checkbox" id="toggle3" class="idad-btn-box__input">
+							<label for="toggle3" class="idad-btn-box__label"></label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="wishlist__main">
+				<div class="wishlist__asidebtn">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+				<div class="wishlist__main-hdr">
+					<p class="wishlist__main-hdr-p">عدد النتائج</p>
+					<h6 class="wishlist__main-hdr-h">12</h6>
+				</div>
+				<div class="row wishlist__main--row">
+					<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+						<div class="wishlistCard">
+							<input type="checkbox" class="wishlistbtn-input" id="t1">
+							<label for="t1" class="wishlistbtn">
+								<i class="fa-solid fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</label>
+							<div class="wishlistCard__hdr">
+								<img src="assets/images/asad.png" alt="" class="wishlistCard__hdr-img">
+							</div>
+							<h6 class="wishlistCard__h">محمد عبدالله الهاشمي</h6>
+							<div class="wishlistCard-wrpr flex-i justify-center">
+								<span>متزوج</span>
+								<span>-</span>
+								<span>37 سنة</span>
+							</div>
+							<div class="wishlistCard__btn">
+								<i class="fa-solid fa-circle-check"></i>
+								<span>ترشيح</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+						<div class="wishlistCard">
+							<input type="checkbox" class="wishlistbtn-input" id="t12">
+							<label for="t12" class="wishlistbtn">
+								<i class="fa-solid fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</label>
+							<div class="wishlistCard__hdr">
+								<img src="assets/images/asad.png" alt="" class="wishlistCard__hdr-img">
+							</div>
+							<h6 class="wishlistCard__h">محمد عبدالله الهاشمي</h6>
+							<div class="wishlistCard-wrpr flex-i justify-center">
+								<span>متزوج</span>
+								<span>-</span>
+								<span>37 سنة</span>
+							</div>
+							<div class="wishlistCard__btn">
+								<i class="fa-solid fa-circle-check"></i>
+								<span>ترشيح</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+						<div class="wishlistCard">
+							<input type="checkbox" class="wishlistbtn-input" id="t13">
+							<label for="t13" class="wishlistbtn">
+								<i class="fa-solid fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</label>
+							<div class="wishlistCard__hdr">
+								<img src="assets/images/asad.png" alt="" class="wishlistCard__hdr-img">
+							</div>
+							<h6 class="wishlistCard__h">محمد عبدالله الهاشمي</h6>
+							<div class="wishlistCard-wrpr flex-i justify-center">
+								<span>متزوج</span>
+								<span>-</span>
+								<span>37 سنة</span>
+							</div>
+							<div class="wishlistCard__btn">
+								<i class="fa-solid fa-circle-check"></i>
+								<span>ترشيح</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+						<div class="wishlistCard">
+							<input type="checkbox" class="wishlistbtn-input" id="t14">
+							<label for="t14" class="wishlistbtn">
+								<i class="fa-solid fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</label>
+							<div class="wishlistCard__hdr">
+								<img src="assets/images/asad.png" alt="" class="wishlistCard__hdr-img">
+							</div>
+							<h6 class="wishlistCard__h">محمد عبدالله الهاشمي</h6>
+							<div class="wishlistCard-wrpr flex-i justify-center">
+								<span>متزوج</span>
+								<span>-</span>
+								<span>37 سنة</span>
+							</div>
+							<div class="wishlistCard__btn">
+								<i class="fa-solid fa-circle-check"></i>
+								<span>ترشيح</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+						<div class="wishlistCard">
+							<input type="checkbox" class="wishlistbtn-input" id="t15">
+							<label for="t15" class="wishlistbtn">
+								<i class="fa-solid fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</label>
+							<div class="wishlistCard__hdr">
+								<img src="assets/images/asad.png" alt="" class="wishlistCard__hdr-img">
+							</div>
+							<h6 class="wishlistCard__h">محمد عبدالله الهاشمي</h6>
+							<div class="wishlistCard-wrpr flex-i justify-center">
+								<span>متزوج</span>
+								<span>-</span>
+								<span>37 سنة</span>
+							</div>
+							<div class="wishlistCard__btn">
+								<i class="fa-solid fa-circle-check"></i>
+								<span>ترشيح</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
+						<div class="wishlistCard">
+							<input type="checkbox" class="wishlistbtn-input" id="t16">
+							<label for="t16" class="wishlistbtn">
+								<i class="fa-solid fa-heart"></i>
+								<i class="fa-solid fa-heart"></i>
+							</label>
+							<div class="wishlistCard__hdr">
+								<img src="assets/images/asad.png" alt="" class="wishlistCard__hdr-img">
+							</div>
+							<h6 class="wishlistCard__h">محمد عبدالله الهاشمي</h6>
+							<div class="wishlistCard-wrpr flex-i justify-center">
+								<span>متزوج</span>
+								<span>-</span>
+								<span>37 سنة</span>
+							</div>
+							<div class="wishlistCard__btn">
+								<i class="fa-solid fa-circle-check"></i>
+								<span>ترشيح</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pagination">
+					<a href="#" class="pagination-page active">1</a>
+					<a href="#" class="pagination-page">2</a>
+					<a href="#" class="pagination-page">3</a>
+					<a href="#" class="pagination-page">4</a>
+					<a href="#" class="pagination-page">5</a>
+					<a href="#" class="pagination-page">6</a>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<img src="assets/images/uae.png" alt="" class="footerBox__img">
+								<a href="/" class="footerBox__logo">
+									<img src="assets/images/footer-logo.png" alt="" class="footerBox__logo-img">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">هدفنا</h2>
+								<p class="footerBox__p">
+									السعي وراء تسهيل ايجاد شريك الحياة الزوجية المثالي بطريقه عصريه مبتكره مع تاكيد الالتزام والمحافظه على
+									الهوية العربيه والعادات الاسلاميه
+								</p>
+								<ul class="ftrsmlist flex-i">
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-instagram"></i>
+										</a>
+									</li>
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-twitter"></i>
+										</a>
+									</li>
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-facebook-f"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">إتصل بنا</h2>
+								<a href="#" class="footerBox__row flex-i">
+									<i class=" fa-solid fa-location-dot"></i>
+									<p class="footerBox__row-p">الإمارات العربية المتحدة</p>
+								</a>
+								<a href="tel:+9710503636836" class="footerBox__row flex-i">
+									<i class="fa-solid fa-phone"></i>
+									<p class="footerBox__row-p">(+971) 06 767 1 222</p>
+								</a>
+								<a href="tel:+9710503636836" class="footerBox__row flex-i">
+									<i class="fa-solid fa-phone"></i>
+									<p class="footerBox__row-p">(+971) 050 569 0 969</p>
+								</a>
+								<a href="https://wa.me/15551234567" class="footerBox__row flex-i">
+									<i class="fa-brands fa-whatsapp"></i>
+									<p class="footerBox__row-p">(+971) 050 36 36 8 36</p>
+								</a>
+								<a href="mailto:info@aldaarmarriage.ae" class="footerBox__row flex-i">
+									<i class=" fa-solid fa-envelope"></i>
+									<p class="footerBox__row-p">info@aldaarmarriage.ae</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">روابط</h2>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fa-solid fa-lightbulb-exclamation"></i>
+									<p class="footerBox__row-p">من نحن</p>
+								</a>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fa-solid fa-compass"></i>
+									<p class="footerBox__row-p"> تعليمات</p>
+								</a>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fas fa-fax"></i>
+									<p class="footerBox__row-p">سياسة الخصوصية</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__btm text-center">
+				<p class="footer__btm-p">2022 © جميع الحقوق محفوظة لموقع الدار لخدمات الزواج</p>
+			</div>
+		</footer>
+	</div>
+	<!-- app-wrapper end -->
+	<script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="dist/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/form-validation.js"></script>
+</body>
+
+</html>

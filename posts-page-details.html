@@ -1,0 +1,393 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Posts Page Details</title>
+	<!-- Favicons -->
+	<link href="assets/images/favicon.png" rel="icon">
+	<!-- font aweasome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+	<!-- form select -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+	<!-- bootstrap 5.2.2 -->
+	<link href="dist/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
+	<!-- flatpicker -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<!-- fonts -->
+	<link href="dist/fonts/fonts.css" rel="stylesheet">
+	<!-- Main Stylesheet File -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link href="assets/css/ahsan.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="container-fluid">
+				<div class="header__nav flex-i justify-between">
+					<a href="/" class="logo web-logo">
+						<img src="assets/images/logo2.png" alt="" class="logo__img">
+					</a>
+					<div class="flex-i">
+						<a href="/" class="mobile-logo">
+							<img src="assets/images/mobile-logo.png" alt="" class="mobile-logo__img">
+						</a>
+						<div class="navlist-wrpr">
+							<div class="navlist__btn">
+								<i class="fa-solid fa-ellipsis-vertical"></i>
+							</div>
+							<ul class="navlist flex-i">
+								<li class="navlist__item">
+									<a href="/" class="navlist__link">الرئيسية</a>
+								</li>
+								<li class="navlist__item">
+									<a href="about.html" class="navlist__link">من نحن</a>
+								</li>
+								<li class="navlist__item">
+									<a href="our-strategy.html" class="navlist__link">الإجراءات الإدارية</a>
+								</li>
+								<li class="navlist__item">
+									<a href="common-questions.html" class="navlist__link">الأسئلة الشائعة</a>
+								</li>
+								<li class="navlist__item">
+									<a href="posts-page.html" class="navlist__link active">مرئيات</a>
+								</li>
+								<li class="navlist__item">
+									<a href="orders.html" class="navlist__link">الطلبات</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- <div class="header__btn-box flex-i d-none">
+					<a href="login.html" class="header__login-btn">
+						<i class="fas fa-sign-in-alt"></i>
+						تسجيل الدخول
+					</a>
+					<a href="register.html" class="header__login-btn">
+						<i class="fas fa-user-plus"></i>
+						تسجيل حساب جديد
+					</a>
+				</div> -->
+					<div class="flex-i prf-noti-wrpr">
+						<div class="navbar_noti_box">
+							<div class="navbar_noti_box-ab"></div>
+							<i class=" fa-solid fa-bell bell1"></i>
+							<i class="fa-solid fa-bell bell2"></i>
+
+							<div class="navbar_noti_box_details">
+								<div class="navbar_noti_box_details_for_hover"></div>
+								<div class="notibox__hdr flex-i justify-between">
+									<p class="notibox__s1b1_t">الإشعارات</p>
+									<div class="markread_btn flex-a">
+										تحديد كمقروءة
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<img src="assets/images/team1.png" alt="" class="notibox__s1_img">
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<i class="fa-solid fa-bell"></i>
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<img src="assets/images/team2.png" alt="" class="notibox__s1_img">
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notibox flex justify-between">
+									<div class="notibox__s1">
+										<i class="fa-solid fa-bell"></i>
+									</div>
+									<dov class="notibox__s2">
+										<h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+										<div class="notibox__s2_wrpr flex-i gap-2">
+											<i class="fa-solid fa-clock-three icn"></i>
+											<p class="">منذ ساعة</p>
+										</div>
+									</dov>
+									<div class="notibox__s3">
+										<input type="checkbox" class="checkbox" name="option3" value="option3">
+									</div>
+								</div>
+								<div class="notiftr flex-a gap-2">
+									<input type="checkbox" class="checkbox" name="option3" value="option3" id="select-all">
+									<p class="notiftr_p">تحديد الكل</p>
+									<button class="notiftr__btn flex-a"><i class="fa-solid fa-trash-check trash"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown">
+							<button class="prf-drpbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="assets/images/profile.png" alt="" class="prf-drpbtn__img">
+								<i class="fa-solid fa-chevron-down"></i>
+							</button>
+							<!-- Dropdown menu -->
+							<div id="pfdrp" class="hidden pfdrp dropdown-menu">
+								<ul class="pfdrplist">
+									<li class="pfdrplist__item text-center namebox">
+										<h3 class="pfdrplist__name">Ahsan Iqbal</h3>
+										<div class="flex-i pfdrplist__item-wrpr justify-center">
+											<span class="pfdrplist__item-age">42</span>
+											<span class="pfdrplist__item-t">سنة</span>
+											<span class="pfdrplist__item-t">-</span>
+											<span class="pfdrplist__item-t">متزوج </span>
+										</div>
+										<div class="flex-i pfdrplist__item-wrpr justify-center">
+											<span class="pfdrplist__item-t">نسبة الإكتمال </span>
+										</div>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="profile.html" class="pfdrplist__link">
+											<i class="fa fa-user-edit"></i>
+											الملف الشخصي
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="settings.html" class="pfdrplist__link">
+											<i class="fa-solid fa-gear"></i>
+											الإعدادات
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="favorite.html" class="pfdrplist__link">
+											<i class="fas fa-heart"></i>
+											إهتماماتي
+										</a>
+									</li>
+									<li class="pfdrplist__item">
+										<a href="login.html" class="pfdrplist__link">
+											<i class="fas fa-power-off"></i>
+											تسجيل خروج
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end -->
+		<div class="breadcrums">
+			<div class="container-fluid">
+				<div class="breadcrums-box flex-i">
+					<i class="fa-solid fa-badge-check"></i>
+					<p class="breadcrums-box-p">الزواج السعيد يبدأ بزوجة صالحة</p>
+				</div>
+			</div>
+		</div>
+		<section class="postdetails-sec ">
+			<div class="container">
+				<div class="row post2wrpr">
+					<div class="col-md-6">
+						<div class="postdetails">
+							<img src="assets/images/post-details.png" alt="" class="postdetails__img">
+							<div class="postdetails__btm flex-i justify-between">
+								<div class="postdetails__btmbox">
+									<span>2023/5/30</span>
+									<i class="fa-solid fa-calendar-days"></i>
+								</div>
+								<div class="postdetails__btmbox">
+									<span>Admin</span>
+									<i class="fa-solid fa-user"></i>
+								</div>
+							</div>
+							<p class="postdetails__para">
+								خلافاَ للإعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ
+								العام 45 قبل الميلاد، مما يجعله أكثر من 2000 عام في القدم. قام البروفيسور “ريتشارد ماك لينتوك” (Richard
+								McClintock) وهو بروفيسور اللغة اللاتينية في جامعة هامبدن-سيدني في فيرجينيا بالبحث عن أصول كلمة لاتينية
+								غامضة في نص لوريم إيبسوم وهي “consectetur”، وخلال تتبعه لهذه الكلمة في الأدب اللاتيني اكتشف المصدر الغير
+								قابل للشك. فلقد اتضح أن كلمات نص لوريم إيبسوم تأتي من الأقسام 1.10.32 و 1.10.33 من كتاب “حول أقاصي الخير
+								والشر” (de Finibus Bonorum et Malorum) للمفكر شيشيرون (Cicero) والذي كتبه في عام 45 قبل الميلاد. هذا
+								الكتاب هو بمثابة مقالة علمية مطولة في نظرية الأخلاق، وكان له شعبية كبيرة في عصر النهضة. السطر الأول من
+								لوريم إيبسوم “Lorem ipsum dolor sit amet..” يأتي من سطر في القسم 1.20.32 من هذا الكتاب
+								هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر. كان
+								لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس عشر عندما قامت مطبعة مجهولة برص مجموعة من
+								الأحرف بشكل عشوائي أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف. خمسة قرون من الزمن
+								لم تقضي على هذا النص، بل انه حتى صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني. انتشر بشكل
+								كبير في ستينيّات هذا القرن مع إصدار رقائق “ليتراسيت” (Letraset) البلاستيكية تحوي مقاطع من هذا النص، وعاد
+								لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل “ألدوس بايج مايكر” (Aldus PageMaker) والتي حوت
+								أيضاً على نسخ من نص لوريم إيبسوم..
+							</p>
+							<div class="postdetails__wrpr">
+								<div class="postdetails__btn">زواج</div>
+								<div class="postdetails__btn">شريك</div>
+								<div class="postdetails__btn">تطابق</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="post2--postdetails"></div>
+		<section class="postdetails2Sec">
+			<div class="container">
+				<h2 class="postdetails2Sec__h">إقرأ ايضاً</h2>
+				<div class="postdetails2Sec-slider swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="postdetails2SecBox">
+								<img src="assets/images/post1.png" alt="" class="postdetails2SecBox__img">
+							</div>
+							<p class="postdetails2SecBox-p">علامات الشريك المناسب</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="postdetails2SecBox">
+								<img src="assets/images/post2.png" alt="" class="postdetails2SecBox__img">
+							</div>
+							<p class="postdetails2SecBox-p">علامات الشريك المناسب</p>
+						</div>
+						<div class="swiper-slide">
+							<div class="postdetails2SecBox">
+								<img src="assets/images/post3.png" alt="" class="postdetails2SecBox__img">
+							</div>
+							<p class="postdetails2SecBox-p">علامات الشريك المناسب</p>
+						</div>
+					</div>
+					<div class="swiper-button-next plandetails-arr plandetails-arr1">
+						<i class="fa-solid fa-arrow-left"></i>
+					</div>
+					<div class="swiper-button-prev plandetails-arr plandetails-arr2">
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<img src="assets/images/uae.png" alt="" class="footerBox__img">
+								<a href="/" class="footerBox__logo">
+									<img src="assets/images/footer-logo.png" alt="" class="footerBox__logo-img">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">هدفنا</h2>
+								<p class="footerBox__p">
+									السعي وراء تسهيل ايجاد شريك الحياة الزوجية المثالي بطريقه عصريه مبتكره مع تاكيد الالتزام والمحافظه على
+									الهوية العربيه والعادات الاسلاميه
+								</p>
+								<ul class="ftrsmlist flex-i">
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-instagram"></i>
+										</a>
+									</li>
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-twitter"></i>
+										</a>
+									</li>
+									<li class="ftrsmlist__item">
+										<a href="#" class="ftrsmlist__link">
+											<i class="fa-brands fa-facebook-f"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">إتصل بنا</h2>
+								<a href="#" class="footerBox__row flex-i">
+									<i class=" fa-solid fa-location-dot"></i>
+									<p class="footerBox__row-p">الإمارات العربية المتحدة</p>
+								</a>
+								<a href="tel:+9710503636836" class="footerBox__row flex-i">
+									<i class="fa-solid fa-phone"></i>
+									<p class="footerBox__row-p">(+971) 06 767 1 222</p>
+								</a>
+								<a href="tel:+9710503636836" class="footerBox__row flex-i">
+									<i class="fa-solid fa-phone"></i>
+									<p class="footerBox__row-p">(+971) 050 569 0 969</p>
+								</a>
+								<a href="https://wa.me/15551234567" class="footerBox__row flex-i">
+									<i class="fa-brands fa-whatsapp"></i>
+									<p class="footerBox__row-p">(+971) 050 36 36 8 36</p>
+								</a>
+								<a href="mailto:info@aldaarmarriage.ae" class="footerBox__row flex-i">
+									<i class=" fa-solid fa-envelope"></i>
+									<p class="footerBox__row-p">info@aldaarmarriage.ae</p>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="footerBox">
+								<h2 class="footerBox__h">روابط</h2>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fa-solid fa-lightbulb-exclamation"></i>
+									<p class="footerBox__row-p">من نحن</p>
+								</a>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fa-solid fa-compass"></i>
+									<p class="footerBox__row-p"> تعليمات</p>
+								</a>
+								<a href="#" class="footerBox__row footerBox__row2 flex-i">
+									<i class="fas fa-fax"></i>
+									<p class="footerBox__row-p">سياسة الخصوصية</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__btm text-center">
+				<p class="footer__btm-p">2022 © جميع الحقوق محفوظة لموقع الدار لخدمات الزواج</p>
+			</div>
+		</footer>
+	</div>
+	<!-- app-wrapper end -->
+	<script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="dist/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/form-validation.js"></script>
+</body>
+
+</html>

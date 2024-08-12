@@ -1,0 +1,715 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Favicons -->
+    <link href="assets/images/favicon.png" rel="icon">
+    <!-- font aweasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- form select -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <!-- bootstrap 5.2.2 -->
+    <link href="dist/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- flatpicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- fonts -->
+    <link href="dist/fonts/fonts.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="assets/css/ahsan.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="profile flex">
+            <aside class="aside-profile">
+                <div class="aside-profile__box-top">
+                    <img src="assets/images/profile-img-bg.jpg" alt="" class="aside-profile__box-topimg">
+                    <img src="assets/images/profile.png" alt="" class="aside-profile__box-top-pf">
+                    <div class="aside-profile__box-name">
+                        Janna Williamson
+                    </div>
+                </div>
+                <div class="aside-profile__wrapper">
+                    <div class="aside-profileBox2">
+                        <div class="flex-i aside-profileBox2__item-wrpr justify-center gap-1">
+                            <span class="aside-profileBox2__item-age">42</span>
+                            <span class="aside-profileBox2__item-t">سنة</span>
+                            <span class="aside-profileBox2__item-t">-</span>
+                            <span class="aside-profileBox2__item-t">متزوج </span>
+                        </div>
+                        <div class="aside-profileBox2-R flex-i justify-between w-100">
+                            <a href="favorite.html" class="aside-profileBox2-RB gap-1 flex-a">
+                                <i class="fa-solid fa-heart"></i>
+                                إهتماماتي
+                            </a>
+                            <a href="orders.html" class="aside-profileBox2-RB gap-1 flex-a">
+                                <i class="fa-solid fa-users-viewfinder"></i>
+                                الطلبات
+                            </a>
+                            <a href="login.html" class="aside-profileBox2-RB gap-1 flex-a">
+                                <i class="fa-solid fa-power-off"></i>
+                                خروج
+                            </a>
+                        </div>
+                        <div class="aside-profileBox2-R2 flex-i gap-2 justify-center">
+                            <p class="aside-profileBox2-R2-p">نسبة الإكتمال</p>
+                            <div class="progress"></div>
+                        </div>
+                        <a href="profile-add.html" class="flex-i justify-between prfLink">
+                            <div class="flex-i prfLinkB1">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <span class="prfLinkB1__txt">المعلومات العامة</span>
+                            </div>
+                            <span class="prfLinkB1__t">100%</span>
+                        </a>
+                        <a href="personal.html" class="flex-i justify-between prfLink">
+                            <div class="flex-i prfLinkB1">
+                                <i class="fa-solid fa-circle-user"></i>
+                                <span class="prfLinkB1__txt"> المعلومات الشخصية </span>
+                            </div>
+                            <span class="prfLinkB1__t">100%</span>
+                        </a>
+                        <a href="writing.html" class="flex-i justify-between prfLink">
+                            <div class="flex-i prfLinkB1">
+                                <i class=" fa-solid fa-feather-pointed"></i>
+                                <span class="prfLinkB1__txt">الكتابة الحرة</span>
+                            </div>
+                            <span class="prfLinkB1__t">100%</span>
+                        </a>
+                        <a href="social.html" class="flex-i justify-between prfLink">
+                            <div class="flex-i prfLinkB1">
+                                <i class=" fa-solid fa-share-nodes"></i>
+                                <span class="prfLinkB1__txt">روابط التواصل</span>
+                            </div>
+                            <span class="prfLinkB1__t">100%</span>
+                        </a>
+                        <a href="images.html" class="flex-i justify-between prfLink">
+                            <div class="flex-i prfLinkB1">
+                                <i class="fa-solid fa-images"></i>
+                                <span class="prfLinkB1__txt">الصور</span>
+                            </div>
+                            <span class="prfLinkB1__t">100%</span>
+                        </a>
+                        <a href="map.html" class="flex-i justify-between prfLink">
+                            <div class="flex-i prfLinkB1">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span class="prfLinkB1__txt">الموقع على الخريط</span>
+                            </div>
+                            <span class="prfLinkB1__t">100%</span>
+                        </a>
+                        <a href="order.html" class="flex-i justify-between prfLink ">
+                            <div class="flex-i prfLinkB1">
+                                <i class="fa-solid fa-users-gear"></i>
+                                <span class="prfLinkB1__txt"> طلبات الإرتباط</span>
+                            </div>
+                            <span class="prfLinkB1__t">100%</span>
+                        </a>
+                        <a href="test.html" class="flex-i justify-between prfLink active">
+                            <div class="flex-i prfLinkB1">
+                                <i class="fa-solid fa-user-gear"></i>
+                                <span class="prfLinkB1__txt">إختبار الشخصية</span>
+                            </div>
+                            <span class="prfLinkB1__t">100%</span>
+                        </a>
+                        <a href="Invoice.html" class="flex-i justify-between prfLink">
+                            <div class="flex-i prfLinkB1">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span class="prfLinkB1__txt">الفواتير والإشتراك</span>
+                            </div>
+                        </a>
+                        <div class="profile-info__asidebtn-wrpr flex-i">
+                            <button class="profile-info__asidebtn" type="button" data-bs-toggle="modal"
+                                data-bs-target="#delmdl">حذف حسابي</button>
+                            <button class="profile-info__asidebtn profile-info__asidebtn--tr" type="button"
+                                data-bs-toggle="modal" data-bs-target="#delmdl2">تعطيل الحساب</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <main class="profile__body position-relative">
+                <div class="mainwrapper">
+                    <header class="header">
+                        <div class="container-fluid">
+                            <div class="header__nav flex-i justify-between">
+                                <div class="aside-btn">
+                                    <i class=" fa-solid fa-bars-staggered"></i>
+                                </div>
+                                <a href="/" class="logo web-logo">
+                                    <img src="assets/images/logo2.png" alt="" class="logo__img">
+                                </a>
+                                <div class="flex-i">
+                                    <a href="/" class="mobile-logo">
+                                        <img src="assets/images/mobile-logo.png" alt="" class="mobile-logo__img">
+                                    </a>
+                                    <div class="navlist-wrpr">
+                                        <div class="navlist__btn">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </div>
+                                        <ul class="navlist flex-i">
+                                            <li class="navlist__item">
+                                                <a href="/" class="navlist__link">الرئيسية</a>
+                                            </li>
+                                            <li class="navlist__item">
+                                                <a href="about.html" class="navlist__link">من نحن</a>
+                                            </li>
+                                            <li class="navlist__item">
+                                                <a href="our-strategy.html" class="navlist__link">الإجراءات الإدارية</a>
+                                            </li>
+                                            <li class="navlist__item">
+                                                <a href="common-questions.html" class="navlist__link">الأسئلة
+                                                    الشائعة</a>
+                                            </li>
+                                            <li class="navlist__item">
+                                                <a href="posts-page.html" class="navlist__link">مرئيات</a>
+                                            </li>
+                                            <li class="navlist__item">
+                                                <a href="orders.html" class="navlist__link active">الطلبات</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- <div class="header__btn-box flex-i">
+                                <a href="login.html" class="header__login-btn">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    تسجيل الدخول
+                                </a>
+                                <a href="register.html" class="header__login-btn">
+                                    <i class="fas fa-user-plus"></i>
+                                    تسجيل حساب جديد
+                                </a>
+                            </div> -->
+                                <div class="flex-i prf-noti-wrpr">
+                                    <div class="navbar_noti_box">
+                                        <div class="navbar_noti_box-ab"></div>
+                                        <i class=" fa-solid fa-bell bell1"></i>
+                                        <i class="fa-solid fa-bell bell2"></i>
+
+                                        <div class="navbar_noti_box_details">
+                                            <div class="navbar_noti_box_details_for_hover"></div>
+                                            <div class="notibox__hdr flex-i justify-between">
+                                                <p class="notibox__s1b1_t">الإشعارات</p>
+                                                <div class="markread_btn flex-a">
+                                                    تحديد كمقروءة
+                                                </div>
+                                            </div>
+                                            <div class="notibox flex justify-between">
+                                                <div class="notibox__s1">
+                                                    <img src="assets/images/team1.png" alt="" class="notibox__s1_img">
+                                                </div>
+                                                <dov class="notibox__s2">
+                                                    <h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+                                                    <div class="notibox__s2_wrpr flex-i gap-2">
+                                                        <i class="fa-solid fa-clock-three icn"></i>
+                                                        <p class="">منذ ساعة</p>
+                                                    </div>
+                                                </dov>
+                                                <div class="notibox__s3">
+                                                    <input type="checkbox" class="checkbox" name="option3"
+                                                        value="option3">
+                                                </div>
+                                            </div>
+                                            <div class="notibox flex justify-between">
+                                                <div class="notibox__s1">
+                                                    <i class="fa-solid fa-bell"></i>
+                                                </div>
+                                                <dov class="notibox__s2">
+                                                    <h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+                                                    <div class="notibox__s2_wrpr flex-i gap-2">
+                                                        <i class="fa-solid fa-clock-three icn"></i>
+                                                        <p class="">منذ ساعة</p>
+                                                    </div>
+                                                </dov>
+                                                <div class="notibox__s3">
+                                                    <input type="checkbox" class="checkbox" name="option3"
+                                                        value="option3">
+                                                </div>
+                                            </div>
+                                            <div class="notibox flex justify-between">
+                                                <div class="notibox__s1">
+                                                    <img src="assets/images/team2.png" alt="" class="notibox__s1_img">
+                                                </div>
+                                                <dov class="notibox__s2">
+                                                    <h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+                                                    <div class="notibox__s2_wrpr flex-i gap-2">
+                                                        <i class="fa-solid fa-clock-three icn"></i>
+                                                        <p class="">منذ ساعة</p>
+                                                    </div>
+                                                </dov>
+                                                <div class="notibox__s3">
+                                                    <input type="checkbox" class="checkbox" name="option3"
+                                                        value="option3">
+                                                </div>
+                                            </div>
+                                            <div class="notibox flex justify-between">
+                                                <div class="notibox__s1">
+                                                    <i class="fa-solid fa-bell"></i>
+                                                </div>
+                                                <dov class="notibox__s2">
+                                                    <h4 class="notibox__s2_h">تم إنضمام مستخدم جديد للمنصة</h4>
+                                                    <div class="notibox__s2_wrpr flex-i gap-2">
+                                                        <i class="fa-solid fa-clock-three icn"></i>
+                                                        <p class="">منذ ساعة</p>
+                                                    </div>
+                                                </dov>
+                                                <div class="notibox__s3">
+                                                    <input type="checkbox" class="checkbox" name="option3"
+                                                        value="option3">
+                                                </div>
+                                            </div>
+                                            <div class="notiftr flex-a gap-2">
+                                                <input type="checkbox" class="checkbox" name="option3" value="option3"
+                                                    id="select-all">
+                                                <p class="notiftr_p">تحديد الكل</p>
+                                                <button class="notiftr__btn flex-a"><i
+                                                        class="fa-solid fa-trash-check trash"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="prf-drpbtn" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <img src="assets/images/profile.png" alt="" class="prf-drpbtn__img">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                        <!-- Dropdown menu -->
+                                        <div id="pfdrp" class="hidden pfdrp dropdown-menu">
+                                            <ul class="pfdrplist">
+                                                <li class="pfdrplist__item text-center namebox">
+                                                    <h3 class="pfdrplist__name">Ahsan Iqbal</h3>
+                                                    <div class="flex-i pfdrplist__item-wrpr justify-center">
+                                                        <span class="pfdrplist__item-age">42</span>
+                                                        <span class="pfdrplist__item-t">سنة</span>
+                                                        <span class="pfdrplist__item-t">-</span>
+                                                        <span class="pfdrplist__item-t">متزوج </span>
+                                                    </div>
+                                                    <div class="flex-i pfdrplist__item-wrpr justify-center">
+                                                        <span class="pfdrplist__item-t">نسبة الإكتمال </span>
+                                                    </div>
+                                                </li>
+                                                <li class="pfdrplist__item">
+                                                    <a href="profile.html" class="pfdrplist__link">
+                                                        <i class="fa fa-user-edit"></i>
+                                                        الملف الشخصي
+                                                    </a>
+                                                </li>
+                                                <li class="pfdrplist__item">
+                                                    <a href="settings.html" class="pfdrplist__link">
+                                                        <i class="fa-solid fa-gear"></i>
+                                                        الإعدادات
+                                                    </a>
+                                                </li>
+                                                <li class="pfdrplist__item">
+                                                    <a href="favorite.html" class="pfdrplist__link">
+                                                        <i class="fas fa-heart"></i>
+                                                        إهتماماتي
+                                                    </a>
+                                                </li>
+                                                <li class="pfdrplist__item">
+                                                    <a href="login.html" class="pfdrplist__link">
+                                                        <i class="fas fa-power-off"></i>
+                                                        تسجيل خروج
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- header end -->
+                    <div class="profile-sec">
+                        <div class="container-fluid">
+                            <div class="profile-sec__top">
+                                <ul class="breadcrums flex-i">
+                                    <li class="breadcrums__list">
+                                        <a href="#" class="breadcrums__link">الرئيسية</a>
+                                    </li>
+                                    <li class="breadcrums__list">
+                                        <a href="#" class="breadcrums__link">الملف الشخصي</a>
+                                    </li>
+                                    <li class="breadcrums__list">
+                                        <a href="#" class="breadcrums__link">إختبار الشخصية </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="prfBodyBox prfBodyBox--test">
+                                <form class="testform">
+                                    <div class="testform-wrpr">
+                                        <div class="flex justify-center">
+                                            <p class="testform__h">تجد صعوبة في تقديم نفسك للآخرين</p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-2 testformbox">
+                                            <p class="">موافق</p>
+                                            <div class="flex justify-center items-center gap-2 ">
+                                                <input type="radio" name="a" class="form-radio accent-green-400 "
+                                                    style=" height: 50px; width: 50px;">
+                                                <!---->
+                                                <input type="radio" name="a" class="form-radio accent-green-400 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a" class="form-radio accent-green-400 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a" class="form-radio accent-gray-200 "
+                                                    style=" height: 20px; width: 20px;">
+                                                <!---->
+                                                <input type="radio" name="a" class="form-radio accent-gray-200 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a" class="form-radio accent-gray-200 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a" class="form-radio accent-gray-200 "
+                                                    style=" height: 50px; width: 50px;">
+                                            </div>
+                                            <p>غير موافق</p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="testform-wrpr">
+                                        <div class="flex justify-center">
+                                            <p class="testform__h">
+                                                دائمًا ما تنغمس في التفكير لدرجة أنك تتجاهل أو تنسى ما حولك
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-2 testformbox">
+                                            <p class="">موافق</p>
+                                            <div class="flex justify-center items-center gap-2">
+                                                <input type="radio" name="a1" class="form-radio accent-green-400 "
+                                                    style=" height: 50px; width: 50px;">
+                                                <!---->
+                                                <input type="radio" name="a1" class="form-radio accent-green-400 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a1" class="form-radio accent-green-400 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a1" class="form-radio accent-gray-200 "
+                                                    style=" height: 20px; width: 20px;">
+                                                <!---->
+                                                <input type="radio" name="a1" class="form-radio accent-gray-200 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a1" class="form-radio accent-gray-200 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a1" class="form-radio accent-gray-200 "
+                                                    style=" height: 50px; width: 50px;">
+                                            </div>
+                                            <p>غير موافق</p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="testform-wrpr">
+                                        <div class="flex justify-center">
+                                            <p class="testform__h">
+                                                تحاول الرد على رسائل البريد الإلكتروني الخاصة بك في أقرب وقت ممكن ولا
+                                                ترغب في رؤية صندوق الوارد وهو غير منظم
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-2 testformbox">
+                                            <p class="">موافق</p>
+                                            <div class="flex justify-center items-center gap-2">
+                                                <input type="radio" name="a2" class="form-radio accent-green-400 "
+                                                    style=" height: 50px; width: 50px;">
+                                                <!---->
+                                                <input type="radio" name="a2" class="form-radio accent-green-400 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a2" class="form-radio accent-green-400 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a2" class="form-radio accent-gray-200 "
+                                                    style=" height: 20px; width: 20px;">
+                                                <!---->
+                                                <input type="radio" name="a2" class="form-radio accent-gray-200 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a2" class="form-radio accent-gray-200 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a2" class="form-radio accent-gray-200 "
+                                                    style=" height: 50px; width: 50px;">
+                                            </div>
+                                            <p>غير موافق</p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="testform-wrpr">
+                                        <div class="flex justify-center">
+                                            <p class="testform__h">
+                                                تجد أنه من السهل الاحتفاظ بالاسترخاء والتركيز حتى في وجود بعض الضغوط
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-2 testformbox">
+                                            <p class="">موافق</p>
+                                            <div class="flex justify-center items-center gap-2">
+                                                <input type="radio" name="a3" class="form-radio accent-green-400 "
+                                                    style=" height: 50px; width: 50px;">
+                                                <!---->
+                                                <input type="radio" name="a3" class="form-radio accent-green-400 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a3" class="form-radio accent-green-400 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a3" class="form-radio accent-gray-200 "
+                                                    style=" height: 20px; width: 20px;">
+                                                <!---->
+                                                <input type="radio" name="a3" class="form-radio accent-gray-200 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a3" class="form-radio accent-gray-200 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a3" class="form-radio accent-gray-200 "
+                                                    style=" height: 50px; width: 50px;">
+                                            </div>
+                                            <p>غير موافق</p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="testform-wrpr">
+                                        <div class="flex justify-center">
+                                            <p class="testform__h">
+                                                لا ترغب عادة في بدء المحادثات
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-2 testformbox">
+                                            <p class="">موافق</p>
+                                            <div class="flex justify-center items-center gap-2">
+                                                <input type="radio" name="a4" class="form-radio accent-green-400 "
+                                                    style=" height: 50px; width: 50px;">
+                                                <!---->
+                                                <input type="radio" name="a4" class="form-radio accent-green-400 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a4" class="form-radio accent-green-400 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a4" class="form-radio accent-gray-200 "
+                                                    style=" height: 20px; width: 20px;">
+                                                <!---->
+                                                <input type="radio" name="a4" class="form-radio accent-gray-200 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a4" class="form-radio accent-gray-200 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a4" class="form-radio accent-gray-200 "
+                                                    style=" height: 50px; width: 50px;">
+                                            </div>
+                                            <p>غير موافق</p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="testform-wrpr">
+                                        <div class="flex justify-center">
+                                            <p class="testform__h">
+                                                نادرًا ما تفعل شيء بدافع الفضول المحض
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-center items-center gap-2 testformbox">
+                                            <p class="">موافق</p>
+                                            <div class="flex justify-center items-center gap-2">
+                                                <input type="radio" name="a5" class="form-radio accent-green-400 "
+                                                    style=" height: 50px; width: 50px;">
+                                                <!---->
+                                                <input type="radio" name="a5" class="form-radio accent-green-400 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a5" class="form-radio accent-green-400 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a5" class="form-radio accent-gray-200 "
+                                                    style=" height: 20px; width: 20px;">
+                                                <!---->
+                                                <input type="radio" name="a5" class="form-radio accent-gray-200 "
+                                                    style=" height: 30px; width: 30px;">
+                                                <!---->
+                                                <input type="radio" name="a5" class="form-radio accent-gray-200 "
+                                                    style=" height: 40px; width: 40px;">
+                                                <!---->
+                                                <input type="radio" name="a5" class="form-radio accent-gray-200 "
+                                                    style=" height: 50px; width: 50px;">
+                                            </div>
+                                            <p>غير موافق</p>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="flex-i gap-3 justify-center">
+                                        <a href="test-form2.html" class="testform-btn flex-a">
+                                            1 / 10 التالي
+                                            <i class="fa-solid fa-arrow-left-long"></i>
+                                        </a>
+                                        <a href="#" class="testform-btn testform-btn--tr flex-a">
+                                            إلغاء
+                                        </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footer">
+                        <div class="footer__top">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="footerBox">
+                                            <img src="assets/images/uae.png" alt="" class="footerBox__img">
+                                            <a href="/" class="footerBox__logo">
+                                                <img src="assets/images/footer-logo.png" alt=""
+                                                    class="footerBox__logo-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="footerBox">
+                                            <h2 class="footerBox__h">هدفنا</h2>
+                                            <p class="footerBox__p">
+                                                السعي وراء تسهيل ايجاد شريك الحياة الزوجية المثالي بطريقه عصريه مبتكره
+                                                مع تاكيد الالتزام والمحافظه على الهوية العربيه والعادات الاسلاميه
+                                            </p>
+                                            <ul class="ftrsmlist flex-i">
+                                                <li class="ftrsmlist__item">
+                                                    <a href="#" class="ftrsmlist__link">
+                                                        <i class="fa-brands fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="ftrsmlist__item">
+                                                    <a href="#" class="ftrsmlist__link">
+                                                        <i class="fa-brands fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="ftrsmlist__item">
+                                                    <a href="#" class="ftrsmlist__link">
+                                                        <i class="fa-brands fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="footerBox">
+                                            <h2 class="footerBox__h">إتصل بنا</h2>
+                                            <a href="#" class="footerBox__row flex-i">
+                                                <i class=" fa-solid fa-location-dot"></i>
+                                                <p class="footerBox__row-p">الإمارات العربية المتحدة</p>
+                                            </a>
+                                            <a href="tel:+9710503636836" class="footerBox__row flex-i">
+                                                <i class="fa-solid fa-phone"></i>
+                                                <p class="footerBox__row-p">(+971) 06 767 1 222</p>
+                                            </a>
+                                            <a href="tel:+9710503636836" class="footerBox__row flex-i">
+                                                <i class="fa-solid fa-phone"></i>
+                                                <p class="footerBox__row-p">(+971) 050 569 0 969</p>
+                                            </a>
+                                            <a href="https://wa.me/15551234567" class="footerBox__row flex-i">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                                <p class="footerBox__row-p">(+971) 050 36 36 8 36</p>
+                                            </a>
+                                            <a href="mailto:info@aldaarmarriage.ae" class="footerBox__row flex-i">
+                                                <i class=" fa-solid fa-envelope"></i>
+                                                <p class="footerBox__row-p">info@aldaarmarriage.ae</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="footerBox">
+                                            <h2 class="footerBox__h">روابط</h2>
+                                            <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                                <i class="fa-solid fa-lightbulb-exclamation"></i>
+                                                <p class="footerBox__row-p">من نحن</p>
+                                            </a>
+                                            <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                                <i class="fa-solid fa-compass"></i>
+                                                <p class="footerBox__row-p"> تعليمات</p>
+                                            </a>
+                                            <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                                <i class="fas fa-fax"></i>
+                                                <p class="footerBox__row-p">سياسة الخصوصية</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__btm text-center">
+                            <p class="footer__btm-p">2022 © جميع الحقوق محفوظة لموقع الدار لخدمات الزواج</p>
+                        </div>
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- app-wrapper end -->
+    <div class="modal fade" id="delmdl" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content delmdl">
+                <div class="delmdlbody">
+                    <div class="delmdlhdr flex-a">
+                        <div class="delmdlhdr-box">
+                            <i class="fa-solid fa-trash-can-check"></i>
+                        </div>
+                    </div>
+                    <p class="delmdlhdr-p">
+                        هل أنت متأكد من
+                        <br>
+                        تريد حذف حسابك نهائياً
+                    </p>
+                    <p class="delmdlhdr-p2">
+                        سيتم حذف حسابك وستفقد كل البيانات الموجوده بالموقع
+                    </p>
+                </div>
+                <div class="delmdlftr flex-i justify-content-center gap-3">
+                    <button type="submit" class="delmdlftr-btn delmdlftr-btn2">حذف</button>
+                    <button type="button" data-bs-dismiss="modal" class="delmdlftr-btn delmdlftr-btn1">إلغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="delmdl2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content delmdl delmdl2">
+                <div class="delmdlbody">
+                    <div class="delmdlhdr flex-a">
+                        <div class="delmdlhdr-box">
+                            <i class="fa-solid fa-trash-can-check"></i>
+                        </div>
+                    </div>
+                    <p class="delmdlhdr-p">
+                        هل انت متأك من
+                        <br>
+                        تريد تعطيل هذا الحساب
+                    </p>
+                    <p class="delmdlhdr-p2">
+                        سيتم حذف حسابك وستفقد كل البيانات الموجوده بالموقع
+                    </p>
+                </div>
+                <div class="delmdlftr flex-i justify-content-center gap-3">
+                    <button type="submit" class="delmdlftr-btn delmdlftr-btn2">حذف</button>
+                    <button type="button" data-bs-dismiss="modal" class="delmdlftr-btn delmdlftr-btn1">إلغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="dist/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+</body>
+
+</html>

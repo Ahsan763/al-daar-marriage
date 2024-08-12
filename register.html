@@ -1,0 +1,159 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Favicons -->
+    <link href="assets/images/favicon.png" rel="icon">
+    <!-- font aweasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- form select -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <!-- bootstrap 5.2.2 -->
+    <link href="dist/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- flatpicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- fonts -->
+    <link href="dist/fonts/fonts.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="assets/css/ahsan.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <div class="login register">
+            <div class="container">
+                <a href="/" class="loginsLogo">
+                    <img src="assets/images/logo2.png" alt="" class="loginsLogo__img">
+                </a>
+                <div class="login__wrapper flex-i justify-between flex-wrap">
+                    <div class="login-box1">
+                        <img src="assets/images/register.png" alt="" class="login-box1__img">
+                    </div>
+                    <div class="login-box2">
+                        <div class="loginCard">
+                            <h3 class="loginCard__h golden">تبدأ المغامرة هنا</h3>
+                            <h4 class="loginCard__h2">
+                                نجعل رحلة البحث عن شريك الحياة سهلة وممتعة!
+                            </h4>
+                            <form action="">
+                                <div class="login__inputbox">
+                                    <label class="form-label login__inputlabel">الإسم كاملاً</label>
+                                    <p class="login__requiredtext">
+                                        الإسم كاملاً - مطلوب
+                                    </p>
+                                    <input type="email" placeholder="الإسم" name="name"
+                                        class="form-control login__input">
+                                </div>
+                                <div class="login__inputbox">
+                                    <label class="form-label form-label login__inputlabel">الجنسية</label>
+                                    <p class="login__requiredtext">
+                                        الجنسية مطلوبة
+                                    </p>
+                                    <select class="countries js-states form-control login__input login__input-sle2"
+                                        id="countries6"></select>
+                                </div>
+                                <div class="login__inputbox">
+                                    <label class="login__inputlabel">رقم الهاتف</label>
+                                    <div class="flex-i">
+                                        <p class="login__requiredtext">رقم التلفون - مطلوب</p>
+                                        <input type="tel" dir="ltr" autocomplete="off" placeholder="5xxxxxxxx"
+                                            class="form-control login__inputlabel login__inputlabel--mobile">
+                                        <span dir="ltr" class="phonebox flex-a">+971</span>
+                                    </div>
+                                </div>
+                                <div class="login__inputbox">
+                                    <label class="form-label login__inputlabel">البريد الإلكتروني</label>
+                                    <input type="email" placeholder="أدخل البريد الإلكتروني" name="email"
+                                        class="form-control login__input email">
+                                    <p class="login__input-required login__input-required2 golden">البريد الإلكتروني
+                                        مطلوب</p>
+                                </div>
+                                <div class="login__inputbox login__inputbox--password">
+                                    <label class="form-label login__inputlabel flex-i justify-between">
+                                        <span class="login__inputlabel-sp">كلمة المرور</span>
+                                    </label>
+                                    <div class="login__input-relative">
+                                        <input type="password" name="email" class="form-control login__input password">
+                                        <div class="showpassbtn flex-a">
+                                            <i class=" fa-solid fa-eye"></i>
+                                        </div>
+                                        <p class="login__input-required login__input-required2">كلمة المرور - مطلوبة</p>
+                                    </div>
+                                </div>
+                                <div class="login__inputbox login__inputbox--password">
+                                    <label class="form-label login__inputlabel flex-i justify-between">
+                                        <span class="login__inputlabel-sp">تأكيد كلمة المرور</span>
+                                    </label>
+                                    <div class="login__input-relative">
+                                        <input type="password" name="email" class="form-control login__input password">
+                                        <div class="showpassbtn flex-a">
+                                            <i class=" fa-solid fa-eye"></i>
+                                        </div>
+                                        <p class="login__input-required login__input-required2">تأكيد كلمة المرور</p>
+                                    </div>
+                                </div>
+                                <div class="input__remember-row flex-i justify-between">
+                                    <div class="w-50 flex-i gap-2">
+                                        <input id="asdfila1" name="remember" type="radio" class="input__remember ">
+                                        <label for="asdfila1" class="input__remember-checkbox">
+                                        </label>
+                                        <span class="input__remember-radio-sp">ذكر</span>
+                                    </div>
+                                    <div class="w-50 flex-i gap-2">
+                                        <input id="asdfila11" name="remember" type="radio" class="input__remember ">
+                                        <label for="asdfila11" class="input__remember-checkbox">
+                                        </label>
+                                        <span class="input__remember-radio-sp">أنثى</span>
+                                    </div>
+                                </div>
+                                <div class="input-termrow flex-i justify-between">
+                                    <p class="input-termrow__p">
+                                        أوافق على سياسة وشروط الخصوصية
+                                    </p>
+                                    <div class="flex-i gap-2">
+                                        <p class="termrow__p2">مطلوبة</p>
+                                        <input type="checkbox" class="registerchk" id="registerchk">
+                                        <label for="registerchk" class="registerchk__label"><i
+                                                class="fa-solid fa-check"></i></label>
+                                    </div>
+                                </div>
+                                <div class="input-termrow flex-i justify-between">
+                                    <p class="input-termrow__p">
+                                        أوافق على تلقي رسالة من النشرة الإخبارية
+                                    </p>
+                                    <input type="checkbox" class=" registerchk" id="registerchk2">
+                                    <label for="registerchk2" class="registerchk__label"><i
+                                            class="fa-solid fa-check"></i></label>
+                                </div>
+                                <button class="login__btn flex-a"> تسجيل </button>
+                                <div class="loginReg__row flex-i justify-center">
+                                    <h4 class="loginReg__row-h">هل لديك حساب؟ </h4>
+                                    <a href="login.html" class="loginReg__row-link">قم بتسجيل الدخول بدلاً من ذلك</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- app-wrapper end -->
+    <script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="dist/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+</body>
+
+</html>

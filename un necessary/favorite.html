@@ -1,0 +1,1857 @@
+<!doctype html>
+<html dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- Favicons -->
+    <link href="assets/images/favicon.png" rel="icon">
+    <!-- font aweasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <!-- form select -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" /> -->
+    <!-- bootstrap 5.2.2 -->
+    <link href="dist/bootstrap-5.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- flatpicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- fonts -->
+    <link href="dist/fonts/fonts.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="assets/css/ahsan.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/media-queries.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <form action="">
+            <div class="orders flex">
+                <aside class="aside">
+                    <div class="aside__wrapper">
+                        <div class="aside__header">
+                            <h2 class="aside__header-h">بحث</h2>
+                        </div>
+                        <div class="aside__body">
+                            <div class="aside__filterbox">
+                                <div class="aside__filter-h">الحالة الاجتماعية</div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil1' name="marital-status" value="متزوج" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil1' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">متزوج</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil2' name="marital-status" value="عزباء" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil2' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">عزباء</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil3' name="marital-status" value="أرمل" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil3' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">أرمل</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil4' name="marital-status" value="مطلق" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil4' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">مطلق</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil5' name="marital-status" value="مطلقة" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil5' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">مطلقة</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil6' name="marital-status" value="أعزب" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil6' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">أعزب</span>
+                                </div>
+                            </div>
+                            <!-- Merital status end -->
+                            <div class="aside__filterbox">
+                                <div class="aside__filter-h">الامارة</div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil7' name="province" value="دبي" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil7' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">دبي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil8' name="province" value="الشارقة" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil8' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">الشارقة</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil9' name="province" value="ابوظبي" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil9' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">ابوظبي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil10' name="province" value="رأس الخيمة" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil10' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">رأس الخيمة</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil11' name="province" type='checkbox' class="aside__ckb" />
+                                    <label for='asdfil11' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">ابوظبي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil12' name="province" value="الفجيرة" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil12' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">الفجيرة</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil13' name="province" value="أم القيوين" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil13' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">أم القيوين</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil14' name="province" value="العين" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil14' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">العين</span>
+                                </div>
+                            </div>
+                            <!-- province end -->
+                            <div class="aside__filterbox">
+                                <h5 class="aside__filter-h">العرق</h5>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil15' name="ethnicity" value="اسمر" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil15' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">اسمر</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil16' name="ethnicity" value="حر" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil16' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">حر</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil17' name="ethnicity" value="مختلط" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil17' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">مختلط</span>
+                                </div>
+                            </div>
+                            <!-- Ethnicity end -->
+                            <div class="aside__filterbox">
+                                <h5 class="aside__filter-h">لون البشرة</h5>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil17a' name="skincolour" value="ابيض" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil17a' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">ابيض</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil18' name="skincolour" value="متوسط" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil18' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">متوسط</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil19' name="skincolour" value="قمحي" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil19' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">قمحي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil20' name="skincolour" value="اسمر" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil20' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">اسمر</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil21' name="skincolour" value="اشقر" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil21' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">اشقر</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil22' name="skincolour" value="اسمر داكن" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil22' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">اسمر داكن</span>
+                                </div>
+                            </div>
+                            <!-- skin color end -->
+                            <div class="aside__filterbox">
+                                <h5 class="aside__filter-h">مستوي التعليم</h5>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil23' name="education" value="غير متعلم" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil23' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">غير متعلم</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil24' name="education" value="ثانوي" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil24' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">ثانوي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil25' name="education" value="إبتدائي" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil25' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">إبتدائي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil26' name="education" value="جامعي" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil26' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">جامعي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil27' name="education" value="ماجستير" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil27' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">ماجستير</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil28' name="education" value="إعدادي" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil28' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">إعدادي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil29' name="education" value="دكتوراة" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil29' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">دكتوراة</span>
+                                </div>
+                            </div>
+                            <!-- education level -->
+                            <div class="aside__filterbox">
+                                <h5 class="aside__filter-h">الوظيفة</h5>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil30' name="job" value="غير متعلم" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil30' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">غير متعلم</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil31' name="job" value="ثانوي" type='checkbox' class="aside__ckb" />
+                                    <label for='asdfil31' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">ثانوي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil32' name="job" value="إبتدائي" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil32' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">إبتدائي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil33' name="job" value="جامعي" type='checkbox' class="aside__ckb" />
+                                    <label for='asdfil33' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">جامعي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil34' name="job" value="ماجستير" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil34' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">ماجستير</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil35' name="job" value="إعدادي" type='checkbox' class="aside__ckb" />
+                                    <label for='asdfil35' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">إعدادي</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil36' name="job" value="دكتوراة" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil36' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">دكتوراة</span>
+                                </div>
+                            </div>
+                            <!-- job status end -->
+                            <div class="aside__filterbox">
+                                <h5 class="aside__filter-h">العمر</h5>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil37' name="age" value="الكل" type='radio' class="aside__ckb" />
+                                    <label for='asdfil37' class="aside__ckbLbl aside__rdioLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">الكل</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil38' name="age" value="18-20" type='radio' class="aside__ckb" />
+                                    <label for='asdfil38' class="aside__ckbLbl aside__rdioLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">من 20 سنة واقل</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil39' name="age" value="20-30" type='radio' class="aside__ckb" />
+                                    <label for='asdfil39' class="aside__ckbLbl aside__rdioLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">من 20 الى 30 سنة</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil40' name="age" value="30-40" type='radio' class="aside__ckb" />
+                                    <label for='asdfil40' class="aside__ckbLbl aside__rdioLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">من 30 الى 40 سنة</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil41' name="age" value="40-50" type='radio' class="aside__ckb" />
+                                    <label for='asdfil41' class="aside__ckbLbl aside__rdioLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">من 40 الى 50 سنة</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil42' name="age" value=">50" type='radio' class="aside__ckb" />
+                                    <label for='asdfil42' class="aside__ckbLbl aside__rdioLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">اكبر من 50 سنة</span>
+                                </div>
+                            </div>
+                            <!-- age filter end -->
+                            <div class="aside__filterbox">
+                                <h5 class="aside__filter-h">الجنسية</h5>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil43' name="nationality" value="الامارات العربية المتحدة"
+                                        type='checkbox' class="aside__ckb" />
+                                    <label for='asdfil43' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">الامارات العربية المتحدة</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil44' name="nationality" value="أفغانستان" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil44' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">أفغانستان</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil45' name="nationality" value="سوريا" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil45' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">سوريا</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil46' name="nationality" value="مصر" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil46' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">مصر</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil47' name="nationality" value="البحرين" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil47' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">البحرين</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil48' name="nationality" value="فرنسا" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil48' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">فرنسا</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil49' name="nationality" value="أنتيجوا وبربودا" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil49' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">أنتيجوا وبربودا</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil50' name="nationality" value="أنجويلا" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil50' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">أنجويلا</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil51' name="nationality" value="أندورا" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil51' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">أندورا</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil52' name="nationality" value="العراق" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil52' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">العراق</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil53' name="nationality" value="المغرب" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil53' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">المغرب</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil54' name="nationality" value="المملكة العربية السعودية"
+                                        type='checkbox' class="aside__ckb" />
+                                    <label for='asdfil54' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">المملكة العربية السعودية</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil55' name="nationality" value="الولايات المتحدة الأمريكية"
+                                        type='checkbox' class="aside__ckb" />
+                                    <label for='asdfil55' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">الولايات المتحدة الأمريكية</span>
+                                </div>
+                                <div class="aside__filter-row">
+                                    <input id='asdfil56' name="nationality" value="روسيا" type='checkbox'
+                                        class="aside__ckb" />
+                                    <label for='asdfil56' class="aside__ckbLbl">
+                                        <i class="fa-solid fa-check"></i>
+                                    </label>
+                                    <span class="aside__ckb-name">روسيا</span>
+                                </div>
+                            </div>
+                            <!-- nationality end -->
+                            <div class="aside__filterbox">
+                                <div class="aside__filterbox-wrpr flex-i">
+                                    <h5 class="aside__filter-h mb-0">حديثات الاسلام</h5>
+                                    <div class="aside__filter-comming flex-a">
+                                        قريبا
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- islamic talk end -->
+                            <div class="aside__filterbox">
+                                <div class="aside__filterbox-wrpr flex-i">
+                                    <h5 class="aside__filter-h mb-0">الكتابيات</h5>
+                                    <div class="aside__filter-comming flex-a">
+                                        قريبا
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Scriptures end -->
+                            <div class="aside__filterbox">
+                                <div class="aside__filterbox-wrpr flex-i">
+                                    <h5 class="aside__filter-h mb-0">الديوان</h5>
+                                    <div class="aside__filter-comming flex-a">
+                                        قريبا
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- court end -->
+                        </div>
+                    </div>
+                </aside>
+                <main class="orders__body position-relative">
+                    <div class="mainwrapper">
+                        <header class="header sticky">
+                            <div class="container-fluid">
+                                <div class="header__nav flex-i justify-between">
+                                    <div class="aside-btn">
+                                        <i class=" fa-solid fa-bars-staggered"></i>
+                                        بحث
+                                    </div>
+                                    <a href="/" class="logo web-logo">
+                                        <img src="assets/images/logo2.png" alt="" class="logo__img">
+                                    </a>
+                                    <div class="flex-i">
+                                        <a href="/" class="mobile-logo">
+                                            <img src="assets/images/mobile-logo.png" alt="" class="mobile-logo__img">
+                                        </a>
+                                        <div class="navlist-wrpr">
+                                            <div class="navlist__btn">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div>
+                                            <ul class="navlist flex-i">
+                                                <li class="navlist__item">
+                                                    <a href="/" class="navlist__link">الرئيسية</a>
+                                                </li>
+                                                <li class="navlist__item">
+                                                    <a href="about.html" class="navlist__link">من نحن</a>
+                                                </li>
+                                                <li class="navlist__item">
+                                                    <a href="our-strategy.html" class="navlist__link">الإجراءات
+                                                        الإدارية</a>
+                                                </li>
+                                                <li class="navlist__item">
+                                                    <a href="common-questions.html" class="navlist__link">الأسئلة
+                                                        الشائعة</a>
+                                                </li>
+                                                <li class="navlist__item">
+                                                    <a href="posts-page.html" class="navlist__link">مرئيات</a>
+                                                </li>
+                                                <li class="navlist__item">
+                                                    <a href="orders.html" class="navlist__link active">الطلبات</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="header__btn-box flex-i">
+                                        <a href="login.html" class="header__login-btn">
+                                            <i class="fas fa-sign-in-alt"></i>
+                                            تسجيل الدخول
+                                        </a>
+                                        <a href="register.html" class="header__login-btn">
+                                            <i class="fas fa-user-plus"></i>
+                                            تسجيل حساب جديد
+                                        </a>
+                                    </div>
+
+                                    <div class="dropdown">
+                                        <button class="prf-drpbtn" type="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <img src="assets/images/profile.png" alt="" class="prf-drpbtn__img">
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                        <!-- Dropdown menu -->
+                                        <div id="pfdrp" class="hidden pfdrp dropdown-menu">
+                                            <ul class="pfdrplist">
+                                                <li class="pfdrplist__item text-center namebox">
+                                                    <h3 class="pfdrplist__name">Ahsan Iqbal</h3>
+                                                    <div class="flex-i pfdrplist__item-wrpr justify-center">
+                                                        <span class="pfdrplist__item-age">42</span>
+                                                        <span class="pfdrplist__item-t">سنة</span>
+                                                        <span class="pfdrplist__item-t">-</span>
+                                                        <span class="pfdrplist__item-t">متزوج </span>
+                                                    </div>
+                                                    <div class="flex-i pfdrplist__item-wrpr justify-center">
+                                                        <span class="pfdrplist__item-t">نسبة الإكتمال </span>
+                                                    </div>
+                                                </li>
+                                                <li class="pfdrplist__item">
+                                                    <a href="profile.html" class="pfdrplist__link">
+                                                        <i class="fa fa-user-edit"></i>
+                                                        الملف الشخصي
+                                                    </a>
+                                                </li>
+                                                <li class="pfdrplist__item">
+                                                    <a href="favorite.html" class="pfdrplist__link">
+                                                        <i class="fas fa-heart"></i>
+                                                        إهتماماتي
+                                                    </a>
+                                                </li>
+                                                <li class="pfdrplist__item">
+                                                    <a href="login.html" class="pfdrplist__link">
+                                                        <i class="fas fa-power-off"></i>
+                                                        تسجيل خروج
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </header>
+                        <!-- header end -->
+                        <div class="filtersec">
+                            <div class="container-fluid">
+                                <div class="filtersec__wrapper">
+                                    <div class="filtersec__row">
+                                        <span class="filtersec__row-h">الحالة الاجتماعية : </span>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text"> متزوج </span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text">عزباء</span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text">أرمل</span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtersec__row">
+                                        <span class="filtersec__row-h"> الامارة : </span>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text"> دبي </span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text">الشارقة</span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text">أرمل</span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filtersec__row">
+                                        <span class="filtersec__row-h"> لون البشرة : </span>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text"> ابيض </span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text">متوسط</span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                        <div class="filtersec-btn flex-a">
+                                            <span class="filtersec-btn__text">قمحي</span>
+                                            <div class="filtersec-btn__close flex-a"><i class="fa-solid fa-xmark"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="reset" class="resetFilter flex-a">
+                                        <i class="fa-solid fa-filter-slash"></i>
+                                        حذف جميع الفلاتر
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orders-sec">
+                            <div class="container">
+                                <div class="orders-sec__wrapper">
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                    <div class="newaddCrd">
+                                        <div class="newaddCrd__top">
+                                            <div class="newaddCrd__row1 flex-i justify-between">
+                                                <div class="newaddCrd__rowB1 flex-i">
+                                                    <img src="assets/images/flags/uae-flag.svg" alt=""
+                                                        class="newaddCrd__rowB1-flag">
+                                                    <p class="newaddCrd__row-country">الامارات العربية المتحدة</p>
+                                                </div>
+                                                <input type="checkbox" name="fav" id="fav1" class="fav">
+                                                <label for="fav1" class="fav__label">
+                                                    <i class=" fa-regular fa-heart"></i>
+                                                    <i class="fa-solid fa-heart"></i>
+                                                </label>
+                                            </div>
+                                            <a href="profile-details.html">
+                                                <div class="newaddCrd__row2 flex-i justify-between">
+                                                    <div class="newaddCrd__row2-b">
+                                                        <img src="assets/images/profile.png" alt=""
+                                                            class="newaddCrd__row2-b-img">
+                                                    </div>
+                                                    <div class="newaddCrd__row2-b2">
+                                                        <h3 class="newaddCrd__row2-b2-h3">الامارات العربية المتحدة / دبي
+                                                        </h3>
+                                                        <div
+                                                            class="newaddCrd__row2-b2-wrpr flex-i justify-center gap-2">
+                                                            <span class="newaddCrd__row2-b2-span1">مطلق -</span>
+                                                            <span class="newaddCrd__row2-b2-span2">سنة</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="newaddCrd__row3 flex flex-wrap">
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">العرق :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> حر</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> لون البشرة : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> ابيض 2</span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1">الوظيفة :</span>
+                                                        <span class="newaddCrd__row3-col-sp2"> خاص </span>
+                                                    </div>
+                                                    <div class="newaddCrd__row3-col flex-i gap-2">
+                                                        <span class="newaddCrd__row3-col-sp1"> التعليم : </span>
+                                                        <span class="newaddCrd__row3-col-sp2"> غير متعلم </span>
+                                                    </div>
+                                                </div>
+                                                <div class="skincolr">
+                                                    <img src="assets/images/skintones.png" alt="" class="skincolr__img">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الطول</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">الوزن</p>
+                                                <p class="newaddCrd_box-p2">132 سم</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">
+                                                    اطفال
+                                                </p>
+                                                <p class="newaddCrd_box-p2">
+                                                    نعم
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_cntr flex-i justify-between">
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p2">توافق الميلاد</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الشخصية</p>
+                                                <p class="newaddCrd_box-p2">اجر إختبار شخصية اولا</p>
+                                            </div>
+                                            <div class="newaddCrd_box-sep"></div>
+                                            <div class="newaddCrd_box">
+                                                <p class="newaddCrd_box-p">توافق الطلبات</p>
+                                                <p class="newaddCrd_box-p2 golden">
+                                                    2%
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="newaddCrd_ftr flex-a">
+                                            <span class="newaddCrd_ftr-sp flex-a">#1669566195599</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="footer">
+                            <div class="footer__top">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="footerBox">
+                                                <img src="assets/images/uae.png" alt="" class="footerBox__img">
+                                                <a href="/" class="footerBox__logo">
+                                                    <img src="assets/images/footer-logo.png" alt=""
+                                                        class="footerBox__logo-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="footerBox">
+                                                <h2 class="footerBox__h">هدفنا</h2>
+                                                <p class="footerBox__p">
+                                                    السعي وراء تسهيل ايجاد شريك الحياة الزوجية المثالي بطريقه عصريه
+                                                    مبتكره مع تاكيد الالتزام والمحافظه على الهوية العربيه والعادات
+                                                    الاسلاميه
+                                                </p>
+                                                <ul class="ftrsmlist flex-i">
+                                                    <li class="ftrsmlist__item">
+                                                        <a href="#" class="ftrsmlist__link">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ftrsmlist__item">
+                                                        <a href="#" class="ftrsmlist__link">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="ftrsmlist__item">
+                                                        <a href="#" class="ftrsmlist__link">
+                                                            <i class="fa-brands fa-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="footerBox">
+                                                <h2 class="footerBox__h">إتصل بنا</h2>
+                                                <a href="#" class="footerBox__row flex-i">
+                                                    <i class=" fa-solid fa-location-dot"></i>
+                                                    <p class="footerBox__row-p">الإمارات العربية المتحدة</p>
+                                                </a>
+                                                <a href="tel:+9710503636836" class="footerBox__row flex-i">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                    <p class="footerBox__row-p">(+971) 06 767 1 222</p>
+                                                </a>
+                                                <a href="tel:+9710503636836" class="footerBox__row flex-i">
+                                                    <i class="fa-solid fa-phone"></i>
+                                                    <p class="footerBox__row-p">(+971) 050 569 0 969</p>
+                                                </a>
+                                                <a href="https://wa.me/15551234567" class="footerBox__row flex-i">
+                                                    <i class="fa-brands fa-whatsapp"></i>
+                                                    <p class="footerBox__row-p">(+971) 050 36 36 8 36</p>
+                                                </a>
+                                                <a href="mailto:info@aldaarmarriage.ae" class="footerBox__row flex-i">
+                                                    <i class=" fa-solid fa-envelope"></i>
+                                                    <p class="footerBox__row-p">info@aldaarmarriage.ae</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="footerBox">
+                                                <h2 class="footerBox__h">روابط</h2>
+                                                <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                                    <i class="fa-solid fa-lightbulb-exclamation"></i>
+                                                    <p class="footerBox__row-p">من نحن</p>
+                                                </a>
+                                                <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                                    <i class="fa-solid fa-compass"></i>
+                                                    <p class="footerBox__row-p"> تعليمات</p>
+                                                </a>
+                                                <a href="#" class="footerBox__row footerBox__row2 flex-i">
+                                                    <i class="fas fa-fax"></i>
+                                                    <p class="footerBox__row-p">سياسة الخصوصية</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__btm text-center">
+                                <p class="footer__btm-p">2022 © جميع الحقوق محفوظة لموقع الدار لخدمات الزواج</p>
+                            </div>
+                        </footer>
+                    </div>
+                </main>
+            </div>
+        </form>
+
+    </div>
+    <!-- app-wrapper end -->
+    <script src="dist/jquery-3.6.1/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="dist/bootstrap-5.2.2/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+</body>
+
+</html>
